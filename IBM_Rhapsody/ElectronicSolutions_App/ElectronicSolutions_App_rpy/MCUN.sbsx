@@ -17,7 +17,7 @@
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hfilename type="a">.\..\..\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
+							<_hfilename type="a">Z:\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
 							<_hsubsystem type="a">BusinessModeling</_hsubsystem>
 							<_hname type="a">BusinessUseCaseModel</_hname>
 							<_hid type="a">GUID fa66a543-8311-428e-809e-b18f8f5609a1</_hid>
@@ -25,7 +25,7 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">3.2.2021::4:39:17</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">3.1.2021::23:59:4</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -33,13 +33,13 @@
 					<_hid type="a">GUID f15e2bf7-8353-4fd0-83fe-abf2fac96c98</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">3.2.2021::4:39:17</_modifiedTime>
+			<_modifiedTime type="a">3.2.2021::1:16:21</_modifiedTime>
 			<_lastID type="a">13</_lastID>
-			<weakCGTime type="a">3.2.2021::4:39:17</weakCGTime>
+			<weakCGTime type="a">3.1.2021::23:59:4</weakCGTime>
 			<strongCGTime type="a">3.2.2021::3:28:38</strongCGTime>
 			<_defaultComposite type="s">GUID 2c1fe2a4-bbff-44ae-bab8-e2b8e71b112c</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">12.31.1969::19:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID 6e6c15c5-1569-4620-916d-87f39a19ab97</value>
 				<value>GUID 4209f406-539c-49ac-8776-46c7c732a9de</value>
@@ -214,8 +214,8 @@
 			</_properties>
 			<_name type="a">Modelo Gen. de Caso de Uso de Negocio</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::4:6:26</_modifiedTime>
-			<_lastModifiedTime type="a">3.2.2021::4:6:26</_lastModifiedTime>
+			<_modifiedTime type="a">3.1.2021::23:59:13</_modifiedTime>
+			<_lastModifiedTime type="a">3.1.2021::23:59:13</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -471,7 +471,7 @@
 			<m_pParent type="s">GUID 1b40ad0c-382f-439b-b9f7-a9332b2f154b</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">CUN - Proceso de prestaci%F3n de servicios de reparaci%F3n y mantenimiento integral de equipos electr%F3nicos</m_str>
+					<m_str type="a">CUN01 - Proceso de prestaci%F3n de servicios de reparaci%F3n y mantenimiento integral de equipos electr%F3nicos</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -590,7 +590,7 @@
 			<m_pParent type="s">GUID 1b40ad0c-382f-439b-b9f7-a9332b2f154b</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">CUN - Proceso de gesti%F3n log%EDstica</m_str>
+					<m_str type="a">CUN02 - Proceso de gesti%F3n log%EDstica</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -713,7 +713,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsCliente</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -730,7 +729,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsCUN - Proceso de prestaci%F3n de servicios de reparaci%F3n y mantenimiento integral de equipos electr%F3nicos</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -888,7 +886,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsEncargado de Log%EDstica</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -905,7 +902,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsCUN - Proceso de gesti%F3n log%EDstica</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1119,7 +1115,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsCUN - Proceso de prestaci%F3n de servicios de reparaci%F3n y mantenimiento integral de equipos electr%F3nicos</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1136,7 +1131,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsT%E9cnico</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1579,7 +1573,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsCUN - Proceso de prestaci%F3n de servicios de reparaci%F3n y mantenimiento integral de equipos electr%F3nicos</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1596,7 +1589,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsRecepcionista</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1844,8 +1836,8 @@
 			</_properties>
 			<_name type="a">CUN vs ON</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::4:40:23</_modifiedTime>
-			<_lastModifiedTime type="a">3.2.2021::4:40:23</_lastModifiedTime>
+			<_modifiedTime type="a">3.1.2021::23:59:13</_modifiedTime>
+			<_lastModifiedTime type="a">3.1.2021::23:59:13</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -1986,7 +1978,7 @@
 			<m_pParent type="s">GUID 8932e8e8-1c1a-4717-b832-663095dc1621</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">CUN - Proceso de prestaci%F3n de servicios de reparaci%F3n y mantenimiento integral de equipos electr%F3nicos</m_str>
+					<m_str type="a">CUN01 - Proceso de prestaci%F3n de servicios de reparaci%F3n y mantenimiento integral de equipos electr%F3nicos</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2043,7 +2035,7 @@
 			<m_pParent type="s">GUID 8932e8e8-1c1a-4717-b832-663095dc1621</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">CUN - Proceso de gesti%F3n log%EDstica</m_str>
+					<m_str type="a">CUN02 - Proceso de gesti%F3n log%EDstica</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2131,7 +2123,7 @@
 			<m_pParent type="s">GUID 8932e8e8-1c1a-4717-b832-663095dc1621</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">class_9</m_str>
+					<m_str type="a">ON - Disminuir el tiempo de b%FAsqueda de las %F3rdenes de servicios en un 75%25 respecto al a%F1o anterior para finales del 2026.</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2259,7 +2251,7 @@
 			<m_pParent type="s">GUID 8932e8e8-1c1a-4717-b832-663095dc1621</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">class_10</m_str>
+					<m_str type="a">ON - Disminuir los errores de ingreso y uso del stock de los repuestos en un 95%25 con respecto al semestre anterior para finales del 2026.</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2387,7 +2379,7 @@
 			<m_pParent type="s">GUID 8932e8e8-1c1a-4717-b832-663095dc1621</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">class_11</m_str>
+					<m_str type="a">ON - Disminuir los errores de registro de datos de clientes y %F3rdenes de servicio en un 70%25 con respecto al semestre anterior para finales del 2026.</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2515,7 +2507,7 @@
 			<m_pParent type="s">GUID 8932e8e8-1c1a-4717-b832-663095dc1621</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">class_12</m_str>
+					<m_str type="a">ON - Disminuir las quejas por cargos extras en un 30%25 respecto al a%F1o anterior para finales del 2026.</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -2867,7 +2859,7 @@
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.31.1969::19:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">
@@ -2890,7 +2882,7 @@
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hfilename type="a">.\..\..\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
+							<_hfilename type="a">Z:\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
 							<_hsubsystem type="a">BusinessModeling</_hsubsystem>
 							<_hname type="a">BusinessGoal</_hname>
 							<_hid type="a">GUID 52227911-5072-4241-a026-92e618f8b8c7</_hid>
@@ -2925,7 +2917,7 @@
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hfilename type="a">.\..\..\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
+							<_hfilename type="a">Z:\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
 							<_hsubsystem type="a">BusinessModeling</_hsubsystem>
 							<_hname type="a">BusinessGoal</_hname>
 							<_hid type="a">GUID 52227911-5072-4241-a026-92e618f8b8c7</_hid>
@@ -2963,7 +2955,7 @@
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hfilename type="a">.\..\..\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
+							<_hfilename type="a">Z:\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
 							<_hsubsystem type="a">BusinessModeling</_hsubsystem>
 							<_hname type="a">BusinessGoal</_hname>
 							<_hid type="a">GUID 52227911-5072-4241-a026-92e618f8b8c7</_hid>
@@ -3001,7 +2993,7 @@
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hfilename type="a">.\..\..\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
+							<_hfilename type="a">Z:\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
 							<_hsubsystem type="a">BusinessModeling</_hsubsystem>
 							<_hname type="a">BusinessGoal</_hname>
 							<_hid type="a">GUID 52227911-5072-4241-a026-92e618f8b8c7</_hid>
@@ -3028,14 +3020,14 @@
 		<IUseCase type="e">
 			<_id type="a">GUID 321bf7c1-2b34-404d-8708-f09ec1e97b55</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">CUN - Proceso de prestaci%F3n de servicios de reparaci%F3n y mantenimiento integral de equipos electr%F3nicos</_name>
+			<_name type="a">CUN01 - Proceso de prestaci%F3n de servicios de reparaci%F3n y mantenimiento integral de equipos electr%F3nicos</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hfilename type="a">.\..\..\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
+							<_hfilename type="a">Z:\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
 							<_hsubsystem type="a">BusinessModeling</_hsubsystem>
 							<_hname type="a">BusinessUseCase</_hname>
 							<_hid type="a">GUID 94d17f20-58aa-417d-8af2-bd20860d0a77</_hid>
@@ -3043,8 +3035,8 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::4:39:28</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.2.2021::4:39:28</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::23:59:4</_modifiedTime>
 			<_lastID type="a">2</_lastID>
 			<weakCGTime type="a">3.2.2021::4:39:28</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -3053,11 +3045,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -3123,7 +3110,7 @@
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsCliente</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::3:39:3</_modifiedTime>
+			<_modifiedTime type="a">3.1.2021::23:59:4</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -3145,7 +3132,7 @@
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsT%E9cnico</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::3:40:54</_modifiedTime>
+			<_modifiedTime type="a">3.1.2021::23:59:4</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -3167,7 +3154,7 @@
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsAdministrador</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::3:51:37</_modifiedTime>
+			<_modifiedTime type="a">3.1.2021::23:59:4</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -3189,7 +3176,7 @@
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsRecepcionista</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::4:4:58</_modifiedTime>
+			<_modifiedTime type="a">3.1.2021::23:59:4</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -3209,14 +3196,18 @@
 		<IUseCase type="e">
 			<_id type="a">GUID c35193cb-8326-4687-a74c-47627104ea49</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">CUN - Proceso de gesti%F3n log%EDstica</_name>
+			<_name type="a">CUN02 - Proceso de gesti%F3n log%EDstica</_name>
+			<_displayName type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang3082{\fonttbl{\f0\fnil\fcharset0 MS Shell Dlg;}}%0D
+\viewkind4\uc1\pard\f0\fs17 CUN - Proceso de gesti\'f3n log\'edstica\par%0D
+}%0D
+</_displayName>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">1</size>
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hfilename type="a">.\..\..\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
+							<_hfilename type="a">Z:\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
 							<_hsubsystem type="a">BusinessModeling</_hsubsystem>
 							<_hname type="a">BusinessUseCase</_hname>
 							<_hid type="a">GUID 94d17f20-58aa-417d-8af2-bd20860d0a77</_hid>
@@ -3224,8 +3215,8 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::4:39:59</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.2.2021::4:39:59</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::23:59:13</_modifiedTime>
 			<_lastID type="a">2</_lastID>
 			<weakCGTime type="a">3.2.2021::4:39:59</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -3234,16 +3225,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<Diagrams type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</Diagrams>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -3307,7 +3288,7 @@
 }%0D
 </_displayName>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::3:38:53</_modifiedTime>
+			<_modifiedTime type="a">3.1.2021::23:59:13</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -3334,7 +3315,7 @@
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hfilename type="a">.\..\..\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
+							<_hfilename type="a">Z:\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
 							<_hsubsystem type="a">BusinessModeling</_hsubsystem>
 							<_hname type="a">BusinessActor</_hname>
 							<_hid type="a">GUID 18637f3a-fddb-4ef2-bafa-205ae7d1c2fd</_hid>
@@ -3342,9 +3323,9 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">3.2.2021::3:38:12</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::3:38:12</_modifiedTime>
-			<weakCGTime type="a">3.2.2021::3:38:12</weakCGTime>
+			<_modifiedTimeWeak type="a">3.1.2021::23:59:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::23:59:4</_modifiedTime>
+			<weakCGTime type="a">3.1.2021::23:59:4</weakCGTime>
 			<strongCGTime type="a">3.2.2021::3:36:30</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -3358,9 +3339,9 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 99a3cfe7-7b8c-40a3-96d2-328506cefb80</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsCUN - Proceso de prestaci%F3n de servicios de reparaci%F3n y mantenimiento integral de equipos electr%F3nicos</_name>
+			<_name type="a">itsCUN01 - Proceso de prestaci%F3n de servicios de reparaci%F3n y mantenimiento integral de equipos electr%F3nicos</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::3:39:3</_modifiedTime>
+			<_modifiedTime type="a">3.1.2021::23:59:4</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -3387,7 +3368,7 @@
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hfilename type="a">.\..\..\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
+							<_hfilename type="a">Z:\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
 							<_hsubsystem type="a">BusinessModeling</_hsubsystem>
 							<_hname type="a">BusinessActor</_hname>
 							<_hid type="a">GUID 18637f3a-fddb-4ef2-bafa-205ae7d1c2fd</_hid>
@@ -3395,9 +3376,9 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">3.2.2021::3:38:31</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::3:38:31</_modifiedTime>
-			<weakCGTime type="a">3.2.2021::3:38:31</weakCGTime>
+			<_modifiedTimeWeak type="a">3.1.2021::23:59:13</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::23:59:13</_modifiedTime>
+			<weakCGTime type="a">3.1.2021::23:59:13</weakCGTime>
 			<strongCGTime type="a">3.2.2021::3:36:34</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -3411,9 +3392,9 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID aff1af74-9e56-4003-b627-b34cd8f1aaf6</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsCUN - Proceso de gesti%F3n log%EDstica</_name>
+			<_name type="a">itsCUN02 - Proceso de gesti%F3n log%EDstica</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::3:38:53</_modifiedTime>
+			<_modifiedTime type="a">3.1.2021::23:59:13</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -3440,7 +3421,7 @@
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hfilename type="a">.\..\..\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
+							<_hfilename type="a">Z:\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
 							<_hsubsystem type="a">BusinessModeling</_hsubsystem>
 							<_hname type="a">BusinessActor</_hname>
 							<_hid type="a">GUID 18637f3a-fddb-4ef2-bafa-205ae7d1c2fd</_hid>
@@ -3448,9 +3429,9 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">3.2.2021::3:41:52</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::3:41:52</_modifiedTime>
-			<weakCGTime type="a">3.2.2021::3:41:52</weakCGTime>
+			<_modifiedTimeWeak type="a">3.1.2021::23:59:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::23:59:4</_modifiedTime>
+			<weakCGTime type="a">3.1.2021::23:59:4</weakCGTime>
 			<strongCGTime type="a">3.2.2021::3:41:52</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -3464,13 +3445,13 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 5af031ee-60cf-409a-8e73-7ee1f2ee04cc</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsCUN - Proceso de prestaci%F3n de servicios de reparaci%F3n y mantenimiento integral de equipos electr%F3nicos</_name>
+			<_name type="a">itsCUN01 - Proceso de prestaci%F3n de servicios de reparaci%F3n y mantenimiento integral de equipos electr%F3nicos</_name>
 			<_displayName type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang3082{\fonttbl{\f0\fnil\fcharset0 MS Shell Dlg;}}%0D
 \viewkind4\uc1\pard\f0\fs17 itsCUN - Proceso de prestaci\'f3n de servicios de reparaci\'f3n y mantenimiento integral de equipos electr\'f3nicos\par%0D
 }%0D
 </_displayName>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::3:40:54</_modifiedTime>
+			<_modifiedTime type="a">3.1.2021::23:59:4</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -3497,7 +3478,7 @@
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hfilename type="a">.\..\..\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
+							<_hfilename type="a">Z:\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
 							<_hsubsystem type="a">BusinessModeling</_hsubsystem>
 							<_hname type="a">BusinessActor</_hname>
 							<_hid type="a">GUID 18637f3a-fddb-4ef2-bafa-205ae7d1c2fd</_hid>
@@ -3505,9 +3486,9 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">3.2.2021::3:51:37</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::3:51:37</_modifiedTime>
-			<weakCGTime type="a">3.2.2021::3:51:37</weakCGTime>
+			<_modifiedTimeWeak type="a">3.1.2021::23:59:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::23:59:4</_modifiedTime>
+			<weakCGTime type="a">3.1.2021::23:59:4</weakCGTime>
 			<strongCGTime type="a">3.2.2021::3:51:37</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -3521,13 +3502,13 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID a1847b34-b69e-45d7-814f-aa3451d6c1ed</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsCUN - Proceso de prestaci%F3n de servicios de reparaci%F3n y mantenimiento integral de equipos electr%F3nicos</_name>
+			<_name type="a">itsCUN01 - Proceso de prestaci%F3n de servicios de reparaci%F3n y mantenimiento integral de equipos electr%F3nicos</_name>
 			<_displayName type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang3082{\fonttbl{\f0\fnil\fcharset0 MS Shell Dlg;}}%0D
 \viewkind4\uc1\pard\f0\fs17 itsCUN - Proceso de prestaci\'f3n de servicios de reparaci\'f3n y mantenimiento integral de equipos electr\'f3nicos\par%0D
 }%0D
 </_displayName>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::3:51:37</_modifiedTime>
+			<_modifiedTime type="a">3.1.2021::23:59:4</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -3554,7 +3535,7 @@
 					
 						<IHandle type="e">
 							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hfilename type="a">.\..\..\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
+							<_hfilename type="a">Z:\profiles\BusinessModelingProfile\BusinessModeling.sbsx</_hfilename>
 							<_hsubsystem type="a">BusinessModeling</_hsubsystem>
 							<_hname type="a">BusinessActor</_hname>
 							<_hid type="a">GUID 18637f3a-fddb-4ef2-bafa-205ae7d1c2fd</_hid>
@@ -3562,9 +3543,9 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">3.2.2021::4:5:24</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::4:5:24</_modifiedTime>
-			<weakCGTime type="a">3.2.2021::4:5:24</weakCGTime>
+			<_modifiedTimeWeak type="a">3.1.2021::23:59:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::23:59:4</_modifiedTime>
+			<weakCGTime type="a">3.1.2021::23:59:4</weakCGTime>
 			<strongCGTime type="a">3.2.2021::4:5:24</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -3578,13 +3559,13 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID fc1927bd-6f69-47f6-929a-26969cf13ef7</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsCUN - Proceso de prestaci%F3n de servicios de reparaci%F3n y mantenimiento integral de equipos electr%F3nicos</_name>
+			<_name type="a">itsCUN01 - Proceso de prestaci%F3n de servicios de reparaci%F3n y mantenimiento integral de equipos electr%F3nicos</_name>
 			<_displayName type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang3082{\fonttbl{\f0\fnil\fcharset0 MS Shell Dlg;}}%0D
 \viewkind4\uc1\pard\f0\fs17 itsCUN - Proceso de prestaci\'f3n de servicios de reparaci\'f3n y mantenimiento integral de equipos electr\'f3nicos\par%0D
 }%0D
 </_displayName>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::4:4:58</_modifiedTime>
+			<_modifiedTime type="a">3.1.2021::23:59:4</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
