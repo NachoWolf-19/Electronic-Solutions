@@ -13,6 +13,8 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
+import com.formdev.flatlaf.FlatDarkLaf;
+
 import utils.Mensajes;
 
 public class FrmLogin extends JFrame {
@@ -26,6 +28,7 @@ public class FrmLogin extends JFrame {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
+		FlatDarkLaf.setup();
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {

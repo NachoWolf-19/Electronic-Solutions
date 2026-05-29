@@ -4,7 +4,6 @@ import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -14,6 +13,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
+
+import utils.AppUtils;
 
 public class FrmMain extends JFrame implements ActionListener {
 
@@ -146,33 +147,26 @@ public class FrmMain extends JFrame implements ActionListener {
 
 	protected void actionPerformedMntmClientes(ActionEvent e) {
 		DlgClientes dlg = new DlgClientes();
-		abrirDialogo(dlg);
+		AppUtils.abrirDialogo(this, dlg);
 	}
 
 	protected void actionPerformedMntmInventario(ActionEvent e) {
 		DlgInventario dlg = new DlgInventario();
-		abrirDialogo(dlg);
+		AppUtils.abrirDialogo(this, dlg);
 	}
 
 	protected void actionPerformedMntmNuevaOrden(ActionEvent e) {
 		DlgNuevaOrden dlg = new DlgNuevaOrden();
-		abrirDialogo(dlg);
+		AppUtils.abrirDialogo(this, dlg);
 	}
 
 	protected void actionPerformedMntmListaMantenimiento(ActionEvent e) {
 		DlgListaMantenimientos dlg = new DlgListaMantenimientos();
-		abrirDialogo(dlg);
+		AppUtils.abrirDialogo(this, dlg);
 	}
 
 	protected void actionPerformedMntmListaReparaciones(ActionEvent e) {
 		DlgListaReparaciones dlg = new DlgListaReparaciones();
-		abrirDialogo(dlg);
-	}
-
-	private void abrirDialogo(JDialog dlg) {
-		dlg.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-		dlg.setLocationRelativeTo(this);
-		dlg.setModal(true);
-		dlg.setVisible(true);
+		AppUtils.abrirDialogo(this, dlg);
 	}
 }
