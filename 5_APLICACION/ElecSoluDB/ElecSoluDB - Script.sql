@@ -52,7 +52,6 @@ CREATE TABLE tecnicos(
 	tecnicoId 		INT AUTO_INCREMENT,
     tecnicoNombre 	VARCHAR(50) NOT NULL,
     tecnicoApellido VARCHAR(50) NOT NULL,
-    categoriaId 	INT NOT NULL,
     tecnicoEstado 	VARCHAR(15) DEFAULT 'Activo',
     CONSTRAINT pk_tecnicos 				PRIMARY KEY (tecnicoId),
     CONSTRAINT fk_tecnicos_categorias 	FOREIGN KEY (categoriaId) REFERENCES categorias(categoriaId),
@@ -68,9 +67,9 @@ CREATE TABLE ordenes(
     ordenClienteActual 	VARCHAR(110) NOT NULL,
     ordenServicio 		VARCHAR(15) NOT NULL,
     ordenEquipo 		VARCHAR(100) NOT NULL,
-    ordenDescripcion 	TEXT NOT NULL,
     categoriaId 		INT NOT NULL,
-    tecnicoId 			INT NULL,
+    ordenDescripcion 	TEXT NOT NULL,
+    tecnicoId 			INT NOT NULL,
     ordenSolucion 		TEXT NULL,
     ordenFechaRegistro 	DATETIME DEFAULT CURRENT_TIMESTAMP,
     ordenFechaEntrega 	DATE NOT NULL,
@@ -84,9 +83,10 @@ CREATE TABLE ordenes(
     CONSTRAINT ch_ordenServicio 		CHECK (ordenServicio IN ('Mantenimiento', 'Reparacion')),
     CONSTRAINT ch_ordenGarantiaMeses 	CHECK (ordenGarantiaMeses >= 0),
     CONSTRAINT ch_ordenPrecio 			CHECK (ordenPrecio >= 0),
-    CONSTRAINT ch_ordenEstado 			CHECK (ordenEstado IN ('Registrado', 'En Proceso', 'Entregable', 'Cerrado'))
+    CONSTRAINT ch_ordenEstado 			CHECK (ordenEstado IN ('Registrado', 'En Taller', 'Entregable', 'Cerrado'))
 );
 
+-- =================================== Tabla Detalles de Ordenes
 CREATE TABLE detalleOrdenes(
 	detalleOrdenId			INT AUTO_INCREMENT,
     ordenId          		INT NOT NULL,
@@ -99,4 +99,15 @@ CREATE TABLE detalleOrdenes(
     CONSTRAINT ch_repuestoCantidad 			CHECK (repuestoCantidad > 0),
     CONSTRAINT ch_repuestoPrecioUnitario 	CHECK (repuestoPrecioUnitario >= 0),
     CONSTRAINT uq_orden_repuesto 			UNIQUE (ordenId,repuestoId)
+);
+
+-- =================================== Tabla Usuarios
+CREATE TABLE usuario(
+	usuarioId INT AUTO_INCREMENT,
+    usuarioNombre VARCHAR(50),
+    usuarioClave VARCHAR(50),
+    usuarioRol VARCHAR(20),
+    CONSTRAINT pk_usuario PRIMARY KEY (usuarioId),
+    CONSTRAINT ch_usuarioClave CHECK (usuarioClave IN ('Admin', 'Tecnico', 'Recepcionista')),
+    CONSTRAINT uq_usuario UNIQUE (usuarioNombre)
 );

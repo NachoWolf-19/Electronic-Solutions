@@ -24,11 +24,8 @@ public class FrmLogin extends JFrame {
 	private JPasswordField pswContrasena;
 	private JTextField txtUsuario;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
-		FlatDarkLaf.setup();
+		FlatDarkLaf.setup(); // Requiere el .jar de FlatLaf en el proyecto
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -41,9 +38,6 @@ public class FrmLogin extends JFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
 	public FrmLogin() {
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -87,17 +81,25 @@ public class FrmLogin extends JFrame {
 	}
 
 	protected void iniciarSesion() {
-		String usuario = txtUsuario.getText();
+		String usuario = txtUsuario.getText().trim();
 		String contrasena = new String(pswContrasena.getPassword());
 
-		if (usuario.equals("admin") && contrasena.equals("123")) {
-			FrmMain main = new FrmMain();
+		String rolUsuario = "";
 
+		if (usuario.equals("admin") && contrasena.equals("123")) {
+			rolUsuario = "Admin";
+		} else if (usuario.equals("tecnico") && contrasena.equals("123")) {
+			rolUsuario = "Tecnico";
+		} else if (usuario.equals("recepcion") && contrasena.equals("123")) {
+			rolUsuario = "Recepcionista";
+		}
+
+		if (!rolUsuario.isEmpty()) {
+			FrmMain main = new FrmMain(rolUsuario);
 			main.setVisible(true);
 			dispose();
 		} else {
 			Mensajes.mensajeError(this, "Usuario o contraseña incorrectos");
-
 			txtUsuario.setText("");
 			pswContrasena.setText("");
 			txtUsuario.requestFocus();
