@@ -8,15 +8,15 @@ USE ElecSoluDB;
 CREATE TABLE clientes(
 	clienteId 			INT AUTO_INCREMENT,
     clienteDNI 			CHAR(8) NULL,
-    clienteNombres 		VARCHAR(50) NULL,
-    clienteApellidos 	VARCHAR(50) NULL,
+    clienteNombres 		VARCHAR(100) NULL,
+    clienteApellidos 	VARCHAR(100) NULL,
     clienteNumero 		VARCHAR(10) NULL,
     clienteEmail 		VARCHAR(170) NULL,
     clienteEstado 		VARCHAR(10) NOT NULL DEFAULT 'Activo',
     CONSTRAINT pk_clientes			PRIMARY KEY (clienteId),
     CONSTRAINT ch_clienteDNI		CHECK (clienteDNI REGEXP '^[0-9]{8}$'),
-    CONSTRAINT ch_clienteNombre 	CHECK (clienteNombre REGEXP '^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$' AND LENGTH(TRIM(clienteNombre)) > 0),
-    CONSTRAINT ch_clienteApellido 	CHECK (clienteApellido REGEXP '^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$' AND LENGTH(TRIM(clienteApellido)) > 0),
+    CONSTRAINT ch_clienteNombre 	CHECK (clienteNombres REGEXP '^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$' AND LENGTH(TRIM(clienteNombres)) > 0),
+    CONSTRAINT ch_clienteApellido 	CHECK (clienteApellidos REGEXP '^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$' AND LENGTH(TRIM(clienteApellidos)) > 0),
     CONSTRAINT ch_clienteNumero 	CHECK (clienteNumero REGEXP '^[0-9]{9}$' OR clienteNumero = 'Sin Numero'),
     CONSTRAINT ch_clienteEmail 		CHECK (clienteEmail REGEXP '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$' OR clienteEmail = 'Sin Email'),
     CONSTRAINT ch_clienteEstado 	CHECK (clienteEstado IN ('Activo', 'Borrado')),
@@ -54,7 +54,6 @@ CREATE TABLE tecnicos(
     tecnicoApellido VARCHAR(50) NOT NULL,
     tecnicoEstado 	VARCHAR(15) DEFAULT 'Activo',
     CONSTRAINT pk_tecnicos 				PRIMARY KEY (tecnicoId),
-    CONSTRAINT fk_tecnicos_categorias 	FOREIGN KEY (categoriaId) REFERENCES categorias(categoriaId),
     CONSTRAINT ch_tecnicoNombre 		CHECK (tecnicoNombre REGEXP '^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$' AND LENGTH(TRIM(tecnicoNombre)) > 0),
     CONSTRAINT ch_tecnicoApellido 		CHECK (tecnicoApellido REGEXP '^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$' AND LENGTH(TRIM(tecnicoApellido)) > 0),
     CONSTRAINT ch_tecnicoEstado			CHECK (tecnicoEstado IN ('Activo', 'Vacaciones', 'Retirado'))
@@ -108,6 +107,101 @@ CREATE TABLE usuario(
     usuarioClave VARCHAR(50),
     usuarioRol VARCHAR(20),
     CONSTRAINT pk_usuario PRIMARY KEY (usuarioId),
-    CONSTRAINT ch_usuarioClave CHECK (usuarioClave IN ('Admin', 'Tecnico', 'Recepcionista')),
+    CONSTRAINT ch_usuarioRol CHECK (usuarioRol IN ('Admin', 'Tecnico', 'Recepcionista')),
     CONSTRAINT uq_usuario UNIQUE (usuarioNombre)
 );
+
+-- =================================== Cliente
+-- Create
+DELIMITER //
+CREATE PROCEDURE usp_RegistrarCliente(
+	IN dni CHAR(8),
+    IN nombre VARCHAR(100),
+    IN apellidos VARCHAR(100),
+    IN numero VARCHAR(10),
+    IN email VARCHAR(170)
+)
+BEGIN
+	IF (numero = '' OR numero IS NULL) AND (email = '' OR email IS NULL)THEN
+		SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Error: No se puede registrar al cliente sin datos de contacto.';
+	END IF;
+
+	IF numero = '' OR numero IS NULL THEN
+		SET numero = 'Sin Numero';
+	END IF;
+    
+    IF email = '' OR email IS NULL THEN
+		SET email = 'Sin Email';
+	END IF;
+    
+    INSERT INTO clientes(clienteDNI, clienteNombres, clienteApellidos, clienteNumero, clienteEmail)
+    VALUES
+    (dni, nombre, apellidos, numero, email);
+END //
+DELIMITER ;
+
+-- Read
+CREATE VIEW vw_ListaClientes AS
+SELECT 
+	clienteId AS id,
+    clienteDNI AS DNI,
+    clienteNombres AS nombres,
+    clienteApellidos AS apellidos,
+    clienteNumero AS numero,
+    clienteEmail AS email
+FROM clientes
+WHERE clienteEstado = 'Activo';
+
+-- Update
+DELIMITER //
+CREATE PROCEDURE usp_ActualizarCliente(
+	IN id INT,
+	IN dni CHAR(8),
+    IN nombre VARCHAR(100),
+    IN apellidos VARCHAR(100),
+    IN numero VARCHAR(10),
+    IN email VARCHAR(170)
+)
+BEGIN
+	IF (numero = '' OR numero IS NULL) AND (email = '' OR email IS NULL)THEN
+		SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Error: No se puede actualizar al cliente sin datos de contacto.';
+	END IF;
+
+	IF numero = '' OR numero IS NULL THEN
+		SET numero = 'Sin Numero';
+	END IF;
+    
+    IF email = '' OR email IS NULL THEN
+		SET email = 'Sin Email';
+	END IF;
+    
+    UPDATE clientes
+	SET 
+		clienteDNI = dni,
+		clienteNombres = nombre,
+		clienteApellidos = apellidos,
+		clienteNumero = numero,
+		clienteEmail = email
+	WHERE clienteId = id;		
+END //
+DELIMITER ;
+
+-- Delete
+DELIMITER //
+CREATE PROCEDURE usp_EliminarCliente(
+	IN id INT
+)
+BEGIN
+	UPDATE clientes
+	SET 
+		clienteDNI = NULL,
+		clienteNombres = NULL,
+		clienteApellidos = NULL,
+		clienteNumero = NULL,
+		clienteEmail = NULL,
+        clienteEstado = 'Borrado'
+	WHERE clienteId = id;		
+END //
+DELIMITER ;
