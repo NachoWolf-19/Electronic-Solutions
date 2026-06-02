@@ -29,11 +29,13 @@ CREATE TABLE repuestos(
     repuestoCod		CHAR(6) NOT NULL,
     repuestoNombre 	VARCHAR(150) NOT NULL,
     repuestoStock 	INT NOT NULL,
-    repuestoPrecio 	DECIMAL(10,2),
+    repuestoPrecio 	DECIMAL(10,2) NOT NULL,
+    repuestoEstado	VARCHAR(10) NOT NULL DEFAULT 'Activo',
     CONSTRAINT pk_repuestos 		PRIMARY KEY (repuestoId),
     CONSTRAINT ch_repuestoNombre 	CHECK (LENGTH(TRIM(repuestoNombre)) > 0),
     CONSTRAINT ch_repuestoStock 	CHECK (repuestoStock >= 0),
     CONSTRAINT ch_repuestoPrecio 	CHECK (repuestoPrecio >= 0),
+    CONSTRAINT ch_repuestoEstado	CHECK (repuestoEstado IN ('Activo', 'Descontinuado')),
     CONSTRAINT uq_repuestoCod		UNIQUE (repuestoCod),
     CONSTRAINT uq_repuestoNombre 	UNIQUE (repuestoNombre)
 );
@@ -111,6 +113,9 @@ CREATE TABLE usuario(
     CONSTRAINT uq_usuario UNIQUE (usuarioNombre)
 );
 
+-- ============================================================================================================================
+-- ======================================================Procesos==============================================================
+-- ============================================================================================================================
 -- =================================== Cliente
 -- Create
 DELIMITER //
@@ -205,3 +210,8 @@ BEGIN
 	WHERE clienteId = id;		
 END //
 DELIMITER ;
+
+-- =================================== Tabla Repuestos
+-- Create
+-- Read
+-- 

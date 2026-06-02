@@ -36,9 +36,10 @@ public class DlgInventario extends JDialog implements ActionListener {
 	private JLabel lblBuscarNombre;
 
 	// ARRAY DE PRUEBA
-	private Object[][] baseDatosMock = { { 1, "PROD01", "Teclado Mecánico RGB", 15, 120.50 },
-			{ 2, "PROD02", "Mouse Gaming Óptico", 30, 45.00 }, { 3, "PROD03", "Monitor 24'' Full HD", 12, 750.00 },
-			{ 4, "PROD04", "Audífonos Marshall Over-Ear", 8, 420.00 } };
+	private Object[][] baseDatosMock = { { 1, "RP0001", "Placa Principal PCB - Smart TV 4K", 12, 180.00 },
+			{ 2, "RP0002", "Batería de Litio 4000mAh (Smartphone)", 25, 45.50 },
+			{ 3, "RP0003", "Set de Hélices de Repuesto (Dron)", 40, 25.00 },
+			{ 4, "RP0004", "Módulo Memoria Flash NAND (Original)", 15, 65.00 } };
 
 	/**
 	 * Launch the application.
