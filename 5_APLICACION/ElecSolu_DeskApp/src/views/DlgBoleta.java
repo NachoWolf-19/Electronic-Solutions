@@ -122,7 +122,7 @@ public class DlgBoleta extends JDialog implements ActionListener {
 		sb.append(String.format(" Categoría    : %s\n", categoria));
 		sb.append(String.format(" Equipo       : %s\n", equipo));
 		sb.append("--------------------------------------------------\n");
-		sb.append(" SÍNTOMAS / DESCRIPCIÓN DE LA FALLA:\n");
+		sb.append(" DESCRIPCIÓN DE LA FALLA:\n");
 		sb.append(wrapText(descripcion, 46) + "\n");
 		sb.append("==================================================\n");
 		sb.append("    Documento interno para control de taller.     \n");

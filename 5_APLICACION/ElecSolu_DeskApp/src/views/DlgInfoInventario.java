@@ -31,7 +31,6 @@ public class DlgInfoInventario extends JDialog implements ActionListener {
 	private JLabel lblStock;
 	private JLabel lblPrecio;
 
-	// ID oculto en variable de instancia
 	private int idProducto;
 
 	// Variables para respaldar los datos iniciales y comparar cambios
@@ -40,7 +39,7 @@ public class DlgInfoInventario extends JDialog implements ActionListener {
 	private String stockOriginal = "";
 	private String precioOriginal = "";
 
-	// ARRAY DE PRUEBA COMPLETO (Sincronizado con DlgInventario)
+	// ARRAY DE PRUEBA COMPLETO
 	private Object[][] baseDatosMock = { { 1, "PROD01", "Teclado Mecánico RGB", 15, 120.50 },
 			{ 2, "PROD02", "Mouse Gaming Óptico", 30, 45.00 }, { 3, "PROD03", "Monitor 24'' Full HD", 12, 750.00 },
 			{ 4, "PROD04", "Audífonos Marshall Over-Ear", 8, 420.00 } };
@@ -116,7 +115,7 @@ public class DlgInfoInventario extends JDialog implements ActionListener {
 		btnActualizar = new JButton("Actualizar");
 		btnActualizar.addActionListener(this);
 		btnActualizar.setBounds(320, 19, 100, 23);
-		btnActualizar.setEnabled(false);
+		btnActualizar.setEnabled(false); // Inicia deshabilitado de fábrica
 		pnlContent.add(btnActualizar);
 
 		btnCerrar = new JButton("Cerrar");
@@ -138,6 +137,52 @@ public class DlgInfoInventario extends JDialog implements ActionListener {
 	}
 
 	protected void actionPerformedBtnActualizar(ActionEvent e) {
+		String codigo = getCodigo();
+		String nombre = getNombre();
+		String stockStr = getStock();
+		String precioStr = getPrecio();
+
+		// 1. Validar campos vacíos obligatorios
+		if (codigo.isEmpty()) {
+			Mensajes.mensajeError(this, "El código del producto no puede estar vacío.");
+			txtCodigo.requestFocus();
+			return;
+		}
+
+		if (nombre.isEmpty()) {
+			Mensajes.mensajeError(this, "El nombre del producto no puede estar vacío.");
+			txtNombre.requestFocus();
+			return;
+		}
+
+		// 2. Validación de Stock (Entero y no negativo)
+		try {
+			int stock = Integer.parseInt(stockStr);
+			if (stock < 0) {
+				Mensajes.mensajeError(this, "El stock no puede ser un valor negativo.");
+				txtStock.requestFocus();
+				return;
+			}
+		} catch (NumberFormatException ex) {
+			Mensajes.mensajeError(this, "El stock debe ser un número entero válido.");
+			txtStock.requestFocus();
+			return;
+		}
+
+		// 3. Validación de Precio (Decimal y no negativo)
+		try {
+			double precio = Double.parseDouble(precioStr);
+			if (precio < 0) {
+				Mensajes.mensajeError(this, "El precio no puede ser un valor negativo.");
+				txtPrecio.requestFocus();
+				return;
+			}
+		} catch (NumberFormatException ex) {
+			Mensajes.mensajeError(this, "El precio debe ser un número válido (ejemplo: 120.50).");
+			txtPrecio.requestFocus();
+			return;
+		}
+
 		Mensajes.mensajeExito(this, "Producto actualizado exitosamente.", "Actualización Exitosa");
 		dispose();
 	}
@@ -185,26 +230,13 @@ public class DlgInfoInventario extends JDialog implements ActionListener {
 		txtPrecio.getDocument().addDocumentListener(dl);
 	}
 
+	// CORREGIDO: El botón ahora responde puramente a si la información difiere del
+	// estado original
 	private void evaluarCambios() {
-		// 1. Verificar si hubo algún cambio real comparado con los strings originales
 		boolean huboCambios = !getCodigo().equals(codigoOriginal) || !getNombre().equals(nombreOriginal)
 				|| !getStock().equals(stockOriginal) || !getPrecio().equals(precioOriginal);
 
-		// 2. Validaciones de formato rigurosas en tiempo real
-		boolean codigoValido = !getCodigo().isEmpty();
-		boolean nombreValido = !getNombre().isEmpty();
-
-		// El stock debe contener únicamente dígitos numéricos enteros (mínimo 1 dígito)
-		boolean stockValido = getStock().matches("\\d+");
-
-		// El precio debe ser un número decimal válido positivo (acepta enteros o
-		// flotantes con punto)
-		boolean precioValido = getPrecio().matches("\\d+(\\.\\d+)?");
-
-		// 3. Evaluar estado final del botón
-		boolean todoFormatoValido = codigoValido && nombreValido && stockValido && precioValido;
-
-		btnActualizar.setEnabled(huboCambios && todoFormatoValido);
+		btnActualizar.setEnabled(huboCambios);
 	}
 
 	// --- METODOS DE ACCESO (GETTERS Y SETTERS) ---

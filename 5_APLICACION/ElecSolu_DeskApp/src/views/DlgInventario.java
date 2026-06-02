@@ -1,6 +1,10 @@
 package views;
 
 import java.awt.BorderLayout;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -13,6 +17,7 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableCellRenderer;
 
 import utils.AppUtils;
 import utils.Mensajes;
@@ -30,8 +35,7 @@ public class DlgInventario extends JDialog implements ActionListener {
 	private JButton btnCerrar;
 	private JLabel lblBuscarNombre;
 
-	// ARRAY DE PRUEBA (Simula las filas de tu tabla 'productos/inventario' en la
-	// base de datos)
+	// ARRAY DE PRUEBA
 	private Object[][] baseDatosMock = { { 1, "PROD01", "Teclado Mecánico RGB", 15, 120.50 },
 			{ 2, "PROD02", "Mouse Gaming Óptico", 30, 45.00 }, { 3, "PROD03", "Monitor 24'' Full HD", 12, 750.00 },
 			{ 4, "PROD04", "Audífonos Marshall Over-Ear", 8, 420.00 } };
@@ -79,20 +83,20 @@ public class DlgInventario extends JDialog implements ActionListener {
 		scp.setBounds(10, 45, 444, 200);
 		pnlContent.add(scp);
 
-		// Modelo con ID oculto al inicio y las dos columnas de acción al final
 		model = new DefaultTableModel(new Object[][] {},
-				new String[] { "ID", "Código", "Nombre", "Stock", "Precio", "", "" }) {
+				new String[] { "ID", "Código", "Nombre", "Stock", "Precio", "Info", "Eliminar" }) {
 			private static final long serialVersionUID = 1L;
 
 			@Override
 			public boolean isCellEditable(int row, int column) {
-				return false; // Bloquea la edición manual directa en la celda
+				return false;
 			}
 		};
 
 		tblInventario = new JTable();
 		tblInventario.setModel(model);
 		tblInventario.setEnabled(true);
+		tblInventario.setRowHeight(24);
 		tblInventario.getTableHeader().setResizingAllowed(false);
 		tblInventario.getTableHeader().setReorderingAllowed(false);
 
@@ -101,15 +105,20 @@ public class DlgInventario extends JDialog implements ActionListener {
 		tblInventario.getColumnModel().getColumn(0).setMaxWidth(0);
 		tblInventario.getColumnModel().getColumn(0).setPreferredWidth(0);
 
-		// Configurar anchos de las columnas visibles
+		// Configurar anchos de las columnas visibles (Total 444px)
 		tblInventario.getColumnModel().getColumn(1).setPreferredWidth(65); // Código
-		tblInventario.getColumnModel().getColumn(2).setPreferredWidth(149); // Nombre
-		tblInventario.getColumnModel().getColumn(3).setPreferredWidth(55); // Stock
-		tblInventario.getColumnModel().getColumn(4).setPreferredWidth(55); // Precio
-		tblInventario.getColumnModel().getColumn(5).setPreferredWidth(60); // Info
-		tblInventario.getColumnModel().getColumn(6).setPreferredWidth(60); // Eliminar
+		tblInventario.getColumnModel().getColumn(2).setPreferredWidth(139); // Nombre
+		tblInventario.getColumnModel().getColumn(3).setPreferredWidth(50); // Stock
+		tblInventario.getColumnModel().getColumn(4).setPreferredWidth(50); // Precio
+		tblInventario.getColumnModel().getColumn(5).setPreferredWidth(65); // Cabecera Info
+		tblInventario.getColumnModel().getColumn(6).setPreferredWidth(75); // Cabecera Eliminar
 
-		// Escuchador de clics optimizado para DOBLE CLIC
+		// Asignar el renderizador de botón físico a las columnas de acción (5 y 6)
+		tblInventario.getColumnModel().getColumn(5).setCellRenderer(new ButtonRenderer());
+		tblInventario.getColumnModel().getColumn(6).setCellRenderer(new ButtonRenderer());
+
+		// Escuchador de clics inteligente (1 clic para botones reales, 2 clics para el
+		// resto de la fila)
 		tblInventario.addMouseListener(new java.awt.event.MouseAdapter() {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -117,15 +126,17 @@ public class DlgInventario extends JDialog implements ActionListener {
 				int col = tblInventario.getSelectedColumn();
 
 				if (fila != -1) {
-					if (evt.getClickCount() == 2) {
-						int idProducto = (int) tblInventario.getValueAt(fila, 0);
-						String codigoProd = tblInventario.getValueAt(fila, 1).toString();
+					int idProducto = (int) tblInventario.getValueAt(fila, 0);
+					String codigoProd = tblInventario.getValueAt(fila, 1).toString();
 
-						if (col == 6) {
-							eliminarProducto(idProducto, codigoProd);
-						} else {
+					if (evt.getClickCount() == 1) {
+						if (col == 5) {
 							infoProducto(idProducto);
+						} else if (col == 6) {
+							eliminarProducto(idProducto, codigoProd);
 						}
+					} else if (evt.getClickCount() == 2 && col < 5) {
+						infoProducto(idProducto);
 					}
 				}
 			}
@@ -146,6 +157,37 @@ public class DlgInventario extends JDialog implements ActionListener {
 		listarInventario();
 	}
 
+	// Clase interna boton (info y eliminar)
+	private class ButtonRenderer extends JPanel implements TableCellRenderer {
+		private static final long serialVersionUID = 1L;
+		private JButton button;
+
+		public ButtonRenderer() {
+			setLayout(new GridBagLayout());
+			setOpaque(true);
+
+			button = new JButton();
+			button.setMargin(new Insets(0, 0, 0, 0));
+			button.setPreferredSize(new Dimension(25, 18)); // CORREGIDO: Un poco menos ancho (45x18)
+
+			add(button);
+		}
+
+		@Override
+		public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus,
+				int row, int column) {
+			button.setText(value != null ? value.toString() : "");
+
+			if (isSelected) {
+				setBackground(table.getSelectionBackground());
+			} else {
+				setBackground(table.getBackground());
+			}
+
+			return this;
+		}
+	}
+
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btnBuscar) {
 			actionPerformedBtnBuscar(e);
@@ -161,7 +203,6 @@ public class DlgInventario extends JDialog implements ActionListener {
 	protected void actionPerformedBtnBuscar(ActionEvent e) {
 		String nombre = txtNombre.getText().trim();
 
-		// Si el campo está vacío, restablece la tabla completa
 		if (nombre.isEmpty()) {
 			listarInventario();
 			return;
@@ -170,7 +211,6 @@ public class DlgInventario extends JDialog implements ActionListener {
 		model.setRowCount(0);
 		boolean encontrado = false;
 
-		// Búsqueda por coincidencia de texto (búsqueda parcial)
 		for (int i = 0; i < baseDatosMock.length; i++) {
 			String nombreMock = baseDatosMock[i][2].toString();
 
@@ -202,11 +242,10 @@ public class DlgInventario extends JDialog implements ActionListener {
 		model.setRowCount(0);
 		for (int i = 0; i < baseDatosMock.length; i++) {
 			model.addRow(new Object[] { baseDatosMock[i][0], baseDatosMock[i][1], baseDatosMock[i][2],
-					baseDatosMock[i][3], baseDatosMock[i][4], "ℹ️ Info", "❌" });
+					baseDatosMock[i][3], baseDatosMock[i][4], "ℹ️", "❌" });
 		}
 	}
 
-	// Abre el diálogo de información pasando el ID seleccionado de forma segura
 	protected void infoProducto(int idProducto) {
 		DlgInfoInventario dlg = new DlgInfoInventario(idProducto);
 		AppUtils.abrirDialogo(this, dlg);

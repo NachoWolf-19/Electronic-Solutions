@@ -1,6 +1,10 @@
 package views;
 
 import java.awt.BorderLayout;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -13,6 +17,7 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableCellRenderer;
 
 import utils.AppUtils;
 import utils.Mensajes;
@@ -30,13 +35,9 @@ public class DlgClientes extends JDialog implements ActionListener {
 	private JButton btnCerrar;
 	private JLabel lblBuscarDni;
 
-	// ARRAY DE PRUEBA (Simula las filas de tu tabla 'clientes' en la base de datos)
 	private Object[][] baseDatosMock = { { 1, "12345678", "Pérez", "Juan" }, { 2, "87654321", "Gómez", "María" },
 			{ 3, "77665544", "López", "Carlos" }, { 4, "12345678", "Torres", "Ana" } };
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		try {
 			DlgClientes dialog = new DlgClientes();
@@ -47,9 +48,6 @@ public class DlgClientes extends JDialog implements ActionListener {
 		}
 	}
 
-	/**
-	 * Create the dialog.
-	 */
 	public DlgClientes() {
 		setTitle("Clientes");
 		setResizable(false);
@@ -77,34 +75,40 @@ public class DlgClientes extends JDialog implements ActionListener {
 		scp.setBounds(10, 45, 444, 200);
 		pnlContent.add(scp);
 
-		model = new DefaultTableModel(new Object[][] {}, new String[] { "ID", "DNI", "Apellido", "Nombre", "", "" }) {
+		model = new DefaultTableModel(new Object[][] {},
+				new String[] { "ID", "DNI", "Apellido", "Nombre", "Info", "Eliminar" }) {
 			private static final long serialVersionUID = 1L;
 
 			@Override
 			public boolean isCellEditable(int row, int column) {
-				return false; // Bloquea la edición manual
+				return false;
 			}
 		};
 
 		tblClientes = new JTable();
 		tblClientes.setModel(model);
 		tblClientes.setEnabled(true);
+		tblClientes.setRowHeight(24);
 		tblClientes.getTableHeader().setResizingAllowed(false);
 		tblClientes.getTableHeader().setReorderingAllowed(false);
 
-		// Ocultar la columna ID (índice 0)
+		// Ocultar ID
 		tblClientes.getColumnModel().getColumn(0).setMinWidth(0);
 		tblClientes.getColumnModel().getColumn(0).setMaxWidth(0);
 		tblClientes.getColumnModel().getColumn(0).setPreferredWidth(0);
 
-		// Configurar anchos de las columnas visibles
-		tblClientes.getColumnModel().getColumn(1).setPreferredWidth(80); // DNI
-		tblClientes.getColumnModel().getColumn(2).setPreferredWidth(130); // Apellido
-		tblClientes.getColumnModel().getColumn(3).setPreferredWidth(130); // Nombre
-		tblClientes.getColumnModel().getColumn(4).setPreferredWidth(60); // Info
-		tblClientes.getColumnModel().getColumn(5).setPreferredWidth(60); // Eliminar
+		// Configurar anchos de las columnas visibles (Total 444px)
+		tblClientes.getColumnModel().getColumn(1).setPreferredWidth(74); // DNI
+		tblClientes.getColumnModel().getColumn(2).setPreferredWidth(110); // Apellido
+		tblClientes.getColumnModel().getColumn(3).setPreferredWidth(110); // Nombre
+		tblClientes.getColumnModel().getColumn(4).setPreferredWidth(70); // Cabecera "Info"
+		tblClientes.getColumnModel().getColumn(5).setPreferredWidth(80); // Cabecera "Eliminar"
 
-		// Escuchador de clics optimizado para DOBLE CLIC
+		// CORREGIDO: Asignar el renderizador de panel con botón optimizado a las
+		// columnas 4 y 5
+		tblClientes.getColumnModel().getColumn(4).setCellRenderer(new ButtonRenderer());
+		tblClientes.getColumnModel().getColumn(5).setCellRenderer(new ButtonRenderer());
+
 		tblClientes.addMouseListener(new java.awt.event.MouseAdapter() {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -112,15 +116,17 @@ public class DlgClientes extends JDialog implements ActionListener {
 				int col = tblClientes.getSelectedColumn();
 
 				if (fila != -1) {
-					if (evt.getClickCount() == 2) {
-						int idCliente = (int) tblClientes.getValueAt(fila, 0);
-						String dniCliente = tblClientes.getValueAt(fila, 1).toString();
+					int idCliente = (int) tblClientes.getValueAt(fila, 0);
+					String dniCliente = tblClientes.getValueAt(fila, 1).toString();
 
+					if (col == 4 || col == 5) {
 						if (col == 5) {
 							eliminarCliente(idCliente, dniCliente);
 						} else {
 							infoCliente(idCliente);
 						}
+					} else if (evt.getClickCount() == 2) {
+						infoCliente(idCliente);
 					}
 				}
 			}
@@ -141,6 +147,38 @@ public class DlgClientes extends JDialog implements ActionListener {
 		listarClientes();
 	}
 
+	// CORREGIDO: Clase interna para renderizar los botones con tamaño controlado
+	// (25x18)
+	private class ButtonRenderer extends JPanel implements TableCellRenderer {
+		private static final long serialVersionUID = 1L;
+		private JButton button;
+
+		public ButtonRenderer() {
+			setLayout(new GridBagLayout());
+			setOpaque(true);
+
+			button = new JButton();
+			button.setMargin(new Insets(0, 0, 0, 0));
+			button.setPreferredSize(new Dimension(25, 18));
+
+			add(button);
+		}
+
+		@Override
+		public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus,
+				int row, int column) {
+			button.setText(value != null ? value.toString() : "");
+
+			if (isSelected) {
+				setBackground(table.getSelectionBackground());
+			} else {
+				setBackground(table.getBackground());
+			}
+
+			return this;
+		}
+	}
+
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btnBuscar) {
 			actionPerformedBtnBuscar(e);
@@ -156,13 +194,11 @@ public class DlgClientes extends JDialog implements ActionListener {
 	protected void actionPerformedBtnBuscar(ActionEvent e) {
 		String dni = txtDni.getText().trim();
 
-		// Si el campo está vacío, se limpia el filtro mostrando toda la tabla
 		if (dni.isEmpty()) {
 			listarClientes();
 			return;
 		}
 
-		// Validación de formato numérico (solo si contiene texto)
 		if (!dni.matches("\\d{8}")) {
 			Mensajes.mensajeError(this, "El DNI debe estar compuesto únicamente por 8 dígitos numéricos.");
 			txtDni.requestFocus();
@@ -178,7 +214,7 @@ public class DlgClientes extends JDialog implements ActionListener {
 
 			if (dniMock.equals(dni)) {
 				model.addRow(new Object[] { baseDatosMock[i][0], baseDatosMock[i][1], baseDatosMock[i][2],
-						baseDatosMock[i][3], "ℹ️ Info", "❌" });
+						baseDatosMock[i][3], "ℹ️", "❌" });
 				encontrado = true;
 			}
 		}
@@ -204,7 +240,7 @@ public class DlgClientes extends JDialog implements ActionListener {
 		model.setRowCount(0);
 		for (int i = 0; i < baseDatosMock.length; i++) {
 			model.addRow(new Object[] { baseDatosMock[i][0], baseDatosMock[i][1], baseDatosMock[i][2],
-					baseDatosMock[i][3], "ℹ️ Info", "❌" });
+					baseDatosMock[i][3], "ℹ️", "❌" });
 		}
 	}
 

@@ -14,6 +14,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 
 import utils.Mensajes;
 
@@ -23,7 +25,7 @@ public class DlgInfoMantenimiento extends JDialog {
 	private final JPanel contentPanel = new JPanel();
 
 	// Campos en columna
-	private JTextField txtFechaRegistro; // Corregido a español para consistencia
+	private JTextField txtFechaRegistro;
 	private JTextField txtCliente;
 	private JTextField txtServicio;
 	private JTextField txtEquipo;
@@ -38,9 +40,17 @@ public class DlgInfoMantenimiento extends JDialog {
 	private JTextArea txtDescripcion;
 	private JTextArea txtSolucionTecnica;
 
+	private JButton btnGuardar;
+
 	private String rolUsuario;
 	private int idOrden;
 	private String estadoActual;
+
+	// Variables para respaldar el estado inicial de los campos editables
+	private String precioInicial;
+	private String descripcionInicial;
+	private String solucionInicial;
+	private String estadoInicial;
 
 	/**
 	 * Launch the application.
@@ -197,10 +207,11 @@ public class DlgInfoMantenimiento extends JDialog {
 			buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
 			getContentPane().add(buttonPane, BorderLayout.SOUTH);
 			{
-				JButton btnGuardar = new JButton("Guardar Cambios");
+				btnGuardar = new JButton("Guardar Cambios");
+				btnGuardar.setEnabled(false);
 				btnGuardar.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						guardarDatos();
+						guardarCambios();
 					}
 				});
 				buttonPane.add(btnGuardar);
@@ -217,20 +228,20 @@ public class DlgInfoMantenimiento extends JDialog {
 			}
 		}
 
-		cargarDatosOrdenMock();
-		evaluarPermisosPorRol();
+		infoOrden();
+		evaluarRol();
+
+		// Almacenar los valores de fábrica exactos con los que abrió la interfaz
+		respaldarValoresIniciales();
+
+		// Activar los escuchadores en tiempo real después de cargar la data inicial
+		activarListenersMonitoreo();
 	}
 
-	private void cargarDatosOrdenMock() {
-		// Simula ordenFechaRegistro (DATETIME -> incluye fecha y hora de registro)
+	private void infoOrden() {
 		txtFechaRegistro.setText("28/05/2026 14:30:15");
-
-		// Simula ordenFechaEntrega (DATE -> solo fecha)
 		txtFechaEntrega.setText("02/06/2026");
-
-		// Simula ordenGarantiaMeses (INT -> número entero)
 		txtGarantia.setText("6");
-
 		txtCliente.setText("Carlos Mendoza");
 		txtEquipo.setText("Amplificador Marshall");
 		txtCategoria.setText("Audio Profesional");
@@ -245,7 +256,7 @@ public class DlgInfoMantenimiento extends JDialog {
 		this.estadoActual = "Registrado";
 	}
 
-	private void evaluarPermisosPorRol() {
+	private void evaluarRol() {
 		txtPrecio.setEditable(false);
 		txtDescripcion.setEditable(false);
 		txtSolucionTecnica.setEditable(false);
@@ -277,7 +288,6 @@ public class DlgInfoMantenimiento extends JDialog {
 		case "Admin":
 			txtPrecio.setEditable(true);
 			txtDescripcion.setEditable(true);
-			txtSolucionTecnica.setEditable(true);
 			cboEstado.setEnabled(true);
 
 			cboEstado.removeAllItems();
@@ -290,12 +300,78 @@ public class DlgInfoMantenimiento extends JDialog {
 		}
 	}
 
-	private void guardarDatos() {
-		String nuevoEstado = cboEstado.getSelectedItem().toString();
-		String solucion = txtSolucionTecnica.getText().trim();
+	private void respaldarValoresIniciales() {
+		precioInicial = txtPrecio.getText();
+		descripcionInicial = txtDescripcion.getText();
+		solucionInicial = txtSolucionTecnica.getText();
+		estadoInicial = cboEstado.getSelectedItem() != null ? cboEstado.getSelectedItem().toString() : "";
+	}
 
-		if (rolUsuario.equals("Tecnico") && nuevoEstado.equals("Entregable") && solucion.isEmpty()) {
+	private void activarListenersMonitoreo() {
+		DocumentListener docListener = new DocumentListener() {
+			@Override
+			public void insertUpdate(DocumentEvent e) {
+				verificarCambios();
+			}
+
+			@Override
+			public void removeUpdate(DocumentEvent e) {
+				verificarCambios();
+			}
+
+			@Override
+			public void changedUpdate(DocumentEvent e) {
+				verificarCambios();
+			}
+		};
+
+		txtPrecio.getDocument().addDocumentListener(docListener);
+		txtDescripcion.getDocument().addDocumentListener(docListener);
+		txtSolucionTecnica.getDocument().addDocumentListener(docListener);
+
+		cboEstado.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				verificarCambios();
+			}
+		});
+	}
+
+	private void verificarCambios() {
+		String nuevoEstado = cboEstado.getSelectedItem() != null ? cboEstado.getSelectedItem().toString() : "";
+		String solucion = txtSolucionTecnica.getText();
+		String precio = txtPrecio.getText();
+		String descripcion = txtDescripcion.getText();
+
+		boolean hayModificacion = !precio.equals(precioInicial) || !descripcion.equals(descripcionInicial)
+				|| !solucion.equals(solucionInicial) || !nuevoEstado.equals(estadoInicial);
+
+		btnGuardar.setEnabled(hayModificacion);
+	}
+
+	private void guardarCambios() {
+		String nuevoEstado = cboEstado.getSelectedItem() != null ? cboEstado.getSelectedItem().toString() : "";
+		String solucion = txtSolucionTecnica.getText();
+		String precioStr = txtPrecio.getText().trim();
+
+		// CORREGIDO: Validación numérica y de signo para el precio
+		try {
+			double precio = Double.parseDouble(precioStr);
+			if (precio < 0) {
+				Mensajes.mensajeError(this, "El precio no puede ser un valor negativo.");
+				txtPrecio.requestFocus();
+				return;
+			}
+		} catch (NumberFormatException e) {
+			Mensajes.mensajeError(this, "El precio debe ser un valor numerico.");
+			txtPrecio.requestFocus();
+			return;
+		}
+
+		// Validaciones específicas de reglas de negocio existentes
+		if (rolUsuario.equals("Tecnico") && nuevoEstado.equals("Entregable") && solucion.trim().isEmpty()) {
 			Mensajes.mensajeError(this, "Debe registrar la solución técnica para marcar como Entregable.");
+			txtSolucionTecnica.requestFocus();
 			return;
 		}
 

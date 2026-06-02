@@ -31,6 +31,7 @@ public class FrmMain extends JFrame implements ActionListener {
 	private JMenuItem mntmClientes;
 	private JMenuItem mntmInventario;
 	private JMenuItem mntmNuevaOrden;
+	private JMenuItem mntmListaOrdenes;
 	private JMenuItem mntmListaMantenimiento;
 	private JMenuItem mntmListaReparaciones;
 
@@ -39,6 +40,10 @@ public class FrmMain extends JFrame implements ActionListener {
 	private JComboBox<String> cboTecnico;
 
 	private String rolUsuario;
+
+	private JMenuItem mntmReporteIngresos;
+	private JMenuItem mntmReporteTecnicos;
+	private JMenuItem mntmReporteRepuestos;
 
 	/**
 	 * Launch the application.
@@ -98,6 +103,10 @@ public class FrmMain extends JFrame implements ActionListener {
 		mntmNuevaOrden.addActionListener(this);
 		mnServicioSoporte.add(mntmNuevaOrden);
 
+		mntmListaOrdenes = new JMenuItem("Lista de Ordenes");
+		mntmListaOrdenes.addActionListener(this);
+		mnServicioSoporte.add(mntmListaOrdenes);
+
 		mntmListaMantenimiento = new JMenuItem("Lista de Mantenimientos");
 		mntmListaMantenimiento.addActionListener(this);
 		mnServicioSoporte.add(mntmListaMantenimiento);
@@ -108,13 +117,25 @@ public class FrmMain extends JFrame implements ActionListener {
 
 		JMenu mnReportes = new JMenu("Reportes");
 		mnbMain.add(mnReportes);
+
+		mntmReporteIngresos = new JMenuItem("Ingresos por Servicio");
+		mntmReporteIngresos.addActionListener(this);
+		mnReportes.add(mntmReporteIngresos);
+
+		mntmReporteTecnicos = new JMenuItem("Productividad de Técnicos");
+		mntmReporteTecnicos.addActionListener(this);
+		mnReportes.add(mntmReporteTecnicos);
+
+		mntmReporteRepuestos = new JMenuItem("Repuestos Utilizados");
+		mntmReporteRepuestos.addActionListener(this);
+		mnReportes.add(mntmReporteRepuestos);
+
 		setContentPane(pnlMain);
 		pnlMain.setLayout(null);
 
 		scp = new JScrollPane();
 		pnlMain.add(scp);
 
-		// Estructura original de 5 columnas restablecida
 		model = new DefaultTableModel(
 				new Object[][] { { "Juan Pérez", "Laptop Asus", "05/06/2026", "Reparación", "Pendiente" },
 						{ "María López", "Impresora HP", "02/06/2026", "Mantenimiento", "En Proceso" },
@@ -148,7 +169,7 @@ public class FrmMain extends JFrame implements ActionListener {
 		cboTecnico = new JComboBox<>();
 		cboTecnico.setBounds(75, 10, 130, 20);
 		pboCargarTecnicosMock();
-		cboTecnico.addActionListener(this); // Escuchador del combo activado
+		cboTecnico.addActionListener(this);
 		pnlMain.add(cboTecnico);
 
 		sederAccesos();
@@ -171,11 +192,25 @@ public class FrmMain extends JFrame implements ActionListener {
 		if (e.getSource() == mntmNuevaOrden) {
 			actionPerformedMntmNuevaOrden(e);
 		}
+		// Unificado: Filtros de Listas de Órdenes mapeados a un único método indexado
+		if (e.getSource() == mntmListaOrdenes) {
+			actionPerformedMntmListaOrdenes(0);
+		}
 		if (e.getSource() == mntmListaMantenimiento) {
-			actionPerformedMntmListaMantenimiento(e);
+			actionPerformedMntmListaOrdenes(1);
 		}
 		if (e.getSource() == mntmListaReparaciones) {
-			actionPerformedMntmListaReparaciones(e);
+			actionPerformedMntmListaOrdenes(2);
+		}
+		// Unificado: Filtros de Reportes
+		if (e.getSource() == mntmReporteIngresos) {
+			actionPerformedMntmReportes(0);
+		}
+		if (e.getSource() == mntmReporteTecnicos) {
+			actionPerformedMntmReportes(1);
+		}
+		if (e.getSource() == mntmReporteRepuestos) {
+			actionPerformedMntmReportes(2);
 		}
 	}
 
@@ -192,8 +227,6 @@ public class FrmMain extends JFrame implements ActionListener {
 			break;
 		}
 	}
-
-	// --- CONFIGURACIÓN DE ROLES ---
 
 	private void accesoAdmin() {
 		lblTecnico.setText("Técnico:");
@@ -215,19 +248,10 @@ public class FrmMain extends JFrame implements ActionListener {
 		scp.setBounds(10, 10, 566, 291);
 	}
 
-	// --- ACCIÓN DEL COMBOBOX (Llamada externa a Base de Datos) ---
-
 	protected void actionPerformedCboTecnico(ActionEvent e) {
 		String tecnicoSeleccionado = cboTecnico.getSelectedItem().toString();
-
-		// Aquí invocas el método de tu manejador de BD/DAO pasando el filtro
-		// seleccionado
-		// modeloOrdenes.listarPorTecnico(tecnicoSeleccionado);
-
 		System.out.println("Filtrando BD para el técnico: " + tecnicoSeleccionado);
 	}
-
-	// --- LOGICA DE INTERACCIÓN (Doble clic en tabla) ---
 
 	private void configurarEventosTabla() {
 		tblListaOrdenesActivas.addMouseListener(new MouseAdapter() {
@@ -257,8 +281,6 @@ public class FrmMain extends JFrame implements ActionListener {
 		cboTecnico.addItem("Jorge Fossati");
 	}
 
-	// --- ACCIONES DE MENÚ ---
-
 	protected void actionPerformedMntmSalir(ActionEvent e) {
 		System.exit(0);
 	}
@@ -278,13 +300,14 @@ public class FrmMain extends JFrame implements ActionListener {
 		AppUtils.abrirDialogo(this, dlg);
 	}
 
-	protected void actionPerformedMntmListaMantenimiento(ActionEvent e) {
-		DlgListaMantenimientos dlg = new DlgListaMantenimientos();
+	// Unificado: Apertura de lista de órdenes centralizada pasando el rol
+	protected void actionPerformedMntmListaOrdenes(int indexLista) {
+		DlgListaOrdenes dlg = new DlgListaOrdenes(indexLista, rolUsuario);
 		AppUtils.abrirDialogo(this, dlg);
 	}
 
-	protected void actionPerformedMntmListaReparaciones(ActionEvent e) {
-		DlgListaReparaciones dlg = new DlgListaReparaciones();
+	protected void actionPerformedMntmReportes(int indexReporte) {
+		DlgReportes dlg = new DlgReportes(indexReporte);
 		AppUtils.abrirDialogo(this, dlg);
 	}
 }

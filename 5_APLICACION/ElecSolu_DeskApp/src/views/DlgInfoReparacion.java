@@ -284,7 +284,7 @@ public class DlgInfoReparacion extends JDialog {
 				btnGuardar = new JButton("Guardar Cambios");
 				btnGuardar.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						guardarDatos();
+						guardarCambios();
 					}
 				});
 				buttonPane.add(btnGuardar);
@@ -301,13 +301,13 @@ public class DlgInfoReparacion extends JDialog {
 			}
 		}
 
-		cargarDatosOrdenMock();
-		cargarComponentesInventarioMock();
-		evaluarPermisosYEstado();
+		cargarRepuestosOrdenMock();
+		cargarInventarioMock();
+		evaluarRol();
 		calcularTotalGeneral(); // Cálculo inicial de apertura
 	}
 
-	private void cargarDatosOrdenMock() {
+	private void cargarRepuestosOrdenMock() {
 		txtFechaRegistro.setText("29/05/2026 10:15:00");
 		txtFechaEntrega.setText("05/06/2026");
 		txtGarantia.setText("12");
@@ -322,7 +322,7 @@ public class DlgInfoReparacion extends JDialog {
 		this.estadoActual = "En Taller";
 	}
 
-	private void cargarComponentesInventarioMock() {
+	private void cargarInventarioMock() {
 		// Formato de carga: Componente, Stock, Precio Unitario
 		modelDisponibles.addRow(new Object[] { "Potenciómetro B10K", 15, 15.00 });
 		modelDisponibles.addRow(new Object[] { "Fusible de Protección 2A", 10, 5.00 });
@@ -334,17 +334,17 @@ public class DlgInfoReparacion extends JDialog {
 		modelAnadidos.addRow(new Object[] { "Fusible de Protección 2A", 2, 5.00, 10.00 });
 	}
 
-	private void evaluarPermisosYEstado() {
+	private void evaluarRol() {
 		txtPrecio.setEditable(false);
 		cboEstado.setEnabled(false);
 		btnGuardar.setEnabled(false);
 		cboEstado.addItem(estadoActual);
 
-		boolean esTecnico = rolUsuario.equals("Tecnico");
+		boolean tec = rolUsuario.equals("Tecnico");
 		boolean estadoPermitido = !estadoActual.equals("Entregable") && !estadoActual.equals("Cerrado");
-		boolean puedeModificarComponentes = esTecnico && estadoPermitido;
+		boolean modificar = tec && estadoPermitido;
 
-		if (puedeModificarComponentes) {
+		if (modificar) {
 			lblDisponibles.setVisible(true);
 			scpDisponibles.setVisible(true);
 			btnAgregar.setVisible(true);
@@ -513,8 +513,11 @@ public class DlgInfoReparacion extends JDialog {
 		calcularTotalGeneral();
 	}
 
-	private void guardarDatos() {
+	private void guardarCambios() {
 		String nuevoEstado = cboEstado.getSelectedItem().toString();
+		if (!Mensajes.mensajeConfirmar(this, "¿Desea guardar los cambios?"))
+			return;
+
 		Mensajes.mensajeExito(this, "Repuestos y costos actualizados con éxito. Total: S/ " + txtTotalGeneral.getText(),
 				"");
 		dispose();
