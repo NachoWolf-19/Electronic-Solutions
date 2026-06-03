@@ -31,7 +31,7 @@ public class DlgInfoInventario extends JDialog implements ActionListener {
 	private JLabel lblStock;
 	private JLabel lblPrecio;
 
-	private int idProducto;
+	private int idRepuesto;
 
 	// Variables para respaldar los datos iniciales y comparar cambios
 	private String codigoOriginal = "";
@@ -39,10 +39,11 @@ public class DlgInfoInventario extends JDialog implements ActionListener {
 	private String stockOriginal = "";
 	private String precioOriginal = "";
 
-	// ARRAY DE PRUEBA COMPLETO
-	private Object[][] baseDatosMock = { { 1, "PROD01", "Teclado Mecánico RGB", 15, 120.50 },
-			{ 2, "PROD02", "Mouse Gaming Óptico", 30, 45.00 }, { 3, "PROD03", "Monitor 24'' Full HD", 12, 750.00 },
-			{ 4, "PROD04", "Audífonos Marshall Over-Ear", 8, 420.00 } };
+	// ARRAY DE PRUEBA ACTUALIZADO: Repuestos de electrónica general
+	private Object[][] baseDatosMock = { { 1, "RP0001", "Placa Principal PCB - Smart TV 4K", 12, 180.00 },
+			{ 2, "RP0002", "Batería de Litio 4000mAh (Smartphone)", 25, 45.50 },
+			{ 3, "RP0003", "Set de Hélices de Repuesto (Dron)", 40, 25.00 },
+			{ 4, "RP0004", "Módulo Memoria Flash NAND (Original)", 15, 65.00 } };
 
 	/**
 	 * Launch the application.
@@ -60,10 +61,10 @@ public class DlgInfoInventario extends JDialog implements ActionListener {
 	/**
 	 * Create the dialog.
 	 */
-	public DlgInfoInventario(int idProducto) {
-		this.idProducto = idProducto;
+	public DlgInfoInventario(int idRepuesto) {
+		this.idRepuesto = idRepuesto;
 
-		setTitle("Información del Producto");
+		setTitle("Información del Repuesto");
 		setResizable(false);
 		setBounds(100, 100, 450, 210);
 		getContentPane().setLayout(new BorderLayout());
@@ -77,6 +78,7 @@ public class DlgInfoInventario extends JDialog implements ActionListener {
 		pnlContent.add(lblCodigo);
 
 		txtCodigo = new JTextField();
+		txtCodigo.setEditable(false); // Bloqueado: El código automático no se edita
 		txtCodigo.setBounds(110, 20, 190, 20);
 		pnlContent.add(txtCodigo);
 		txtCodigo.setColumns(10);
@@ -115,7 +117,7 @@ public class DlgInfoInventario extends JDialog implements ActionListener {
 		btnActualizar = new JButton("Actualizar");
 		btnActualizar.addActionListener(this);
 		btnActualizar.setBounds(320, 19, 100, 23);
-		btnActualizar.setEnabled(false); // Inicia deshabilitado de fábrica
+		btnActualizar.setEnabled(false);
 		pnlContent.add(btnActualizar);
 
 		btnCerrar = new JButton("Cerrar");
@@ -123,7 +125,7 @@ public class DlgInfoInventario extends JDialog implements ActionListener {
 		btnCerrar.setBounds(320, 54, 100, 23);
 		pnlContent.add(btnCerrar);
 
-		cargarDatosDelProducto();
+		cargarDatosDelRepuesto();
 		configurarEscuchadoresDeTexto();
 	}
 
@@ -137,25 +139,18 @@ public class DlgInfoInventario extends JDialog implements ActionListener {
 	}
 
 	protected void actionPerformedBtnActualizar(ActionEvent e) {
-		String codigo = getCodigo();
 		String nombre = getNombre();
 		String stockStr = getStock();
 		String precioStr = getPrecio();
 
 		// 1. Validar campos vacíos obligatorios
-		if (codigo.isEmpty()) {
-			Mensajes.mensajeError(this, "El código del producto no puede estar vacío.");
-			txtCodigo.requestFocus();
-			return;
-		}
-
 		if (nombre.isEmpty()) {
-			Mensajes.mensajeError(this, "El nombre del producto no puede estar vacío.");
+			Mensajes.mensajeError(this, "El nombre del repuesto no puede estar vacío.");
 			txtNombre.requestFocus();
 			return;
 		}
 
-		// 2. Validación de Stock (Entero y no negativo)
+		// 2. Validación de Stock
 		try {
 			int stock = Integer.parseInt(stockStr);
 			if (stock < 0) {
@@ -169,7 +164,7 @@ public class DlgInfoInventario extends JDialog implements ActionListener {
 			return;
 		}
 
-		// 3. Validación de Precio (Decimal y no negativo)
+		// 3. Validación de Precio
 		try {
 			double precio = Double.parseDouble(precioStr);
 			if (precio < 0) {
@@ -178,20 +173,20 @@ public class DlgInfoInventario extends JDialog implements ActionListener {
 				return;
 			}
 		} catch (NumberFormatException ex) {
-			Mensajes.mensajeError(this, "El precio debe ser un número válido (ejemplo: 120.50).");
+			Mensajes.mensajeError(this, "El precio debe ser un número válido (ejemplo: 45.50).");
 			txtPrecio.requestFocus();
 			return;
 		}
 
-		Mensajes.mensajeExito(this, "Producto actualizado exitosamente.", "Actualización Exitosa");
+		Mensajes.mensajeExito(this, "Repuesto actualizado exitosamente.", "Actualización Exitosa");
 		dispose();
 	}
 
-	private void cargarDatosDelProducto() {
+	private void cargarDatosDelRepuesto() {
 		for (int i = 0; i < baseDatosMock.length; i++) {
 			int idMock = (int) baseDatosMock[i][0];
 
-			if (idMock == this.idProducto) {
+			if (idMock == this.idRepuesto) {
 				codigoOriginal = baseDatosMock[i][1].toString();
 				nombreOriginal = baseDatosMock[i][2].toString();
 				stockOriginal = baseDatosMock[i][3].toString();
@@ -224,17 +219,17 @@ public class DlgInfoInventario extends JDialog implements ActionListener {
 			}
 		};
 
-		txtCodigo.getDocument().addDocumentListener(dl);
+		// Ya no escucha a txtCodigo por estar bloqueado de edición
 		txtNombre.getDocument().addDocumentListener(dl);
 		txtStock.getDocument().addDocumentListener(dl);
 		txtPrecio.getDocument().addDocumentListener(dl);
 	}
 
-	// CORREGIDO: El botón ahora responde puramente a si la información difiere del
-	// estado original
 	private void evaluarCambios() {
-		boolean huboCambios = !getCodigo().equals(codigoOriginal) || !getNombre().equals(nombreOriginal)
-				|| !getStock().equals(stockOriginal) || !getPrecio().equals(precioOriginal);
+		// El botón responde si el nombre, stock o precio varían de sus estados
+		// originales
+		boolean huboCambios = !getNombre().equals(nombreOriginal) || !getStock().equals(stockOriginal)
+				|| !getPrecio().equals(precioOriginal);
 
 		btnActualizar.setEnabled(huboCambios);
 	}

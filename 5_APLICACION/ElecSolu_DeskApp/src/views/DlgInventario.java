@@ -35,7 +35,7 @@ public class DlgInventario extends JDialog implements ActionListener {
 	private JButton btnCerrar;
 	private JLabel lblBuscarNombre;
 
-	// ARRAY DE PRUEBA
+	// ARRAY DE PRUEBA (Mantiene sus datos, pero no mandamos el precio a la tabla)
 	private Object[][] baseDatosMock = { { 1, "RP0001", "Placa Principal PCB - Smart TV 4K", 12, 180.00 },
 			{ 2, "RP0002", "Batería de Litio 4000mAh (Smartphone)", 25, 45.50 },
 			{ 3, "RP0003", "Set de Hélices de Repuesto (Dron)", 40, 25.00 },
@@ -84,8 +84,9 @@ public class DlgInventario extends JDialog implements ActionListener {
 		scp.setBounds(10, 45, 444, 200);
 		pnlContent.add(scp);
 
+		// SE ELIMINÓ "PRECIO" DE LOS COMPONENTES DE CABECERA
 		model = new DefaultTableModel(new Object[][] {},
-				new String[] { "ID", "Código", "Nombre", "Stock", "Precio", "Info", "Eliminar" }) {
+				new String[] { "ID", "Código", "Nombre", "Stock", "Info", "Eliminar" }) {
 			private static final long serialVersionUID = 1L;
 
 			@Override
@@ -106,20 +107,19 @@ public class DlgInventario extends JDialog implements ActionListener {
 		tblInventario.getColumnModel().getColumn(0).setMaxWidth(0);
 		tblInventario.getColumnModel().getColumn(0).setPreferredWidth(0);
 
-		// Configurar anchos de las columnas visibles (Total 444px)
+		// AJUSTE DE ANCHOS (El espacio liberado del precio se le asignó a Nombre: 139 +
+		// 50 = 189)
 		tblInventario.getColumnModel().getColumn(1).setPreferredWidth(65); // Código
-		tblInventario.getColumnModel().getColumn(2).setPreferredWidth(139); // Nombre
+		tblInventario.getColumnModel().getColumn(2).setPreferredWidth(189); // Nombre
 		tblInventario.getColumnModel().getColumn(3).setPreferredWidth(50); // Stock
-		tblInventario.getColumnModel().getColumn(4).setPreferredWidth(50); // Precio
-		tblInventario.getColumnModel().getColumn(5).setPreferredWidth(65); // Cabecera Info
-		tblInventario.getColumnModel().getColumn(6).setPreferredWidth(75); // Cabecera Eliminar
+		tblInventario.getColumnModel().getColumn(4).setPreferredWidth(65); // Info (Antes era 5)
+		tblInventario.getColumnModel().getColumn(5).setPreferredWidth(75); // Eliminar (Antes era 6)
 
-		// Asignar el renderizador de botón físico a las columnas de acción (5 y 6)
+		// Asignar el renderizador de botón a las nuevas posiciones de columna (4 y 5)
+		tblInventario.getColumnModel().getColumn(4).setCellRenderer(new ButtonRenderer());
 		tblInventario.getColumnModel().getColumn(5).setCellRenderer(new ButtonRenderer());
-		tblInventario.getColumnModel().getColumn(6).setCellRenderer(new ButtonRenderer());
 
-		// Escuchador de clics inteligente (1 clic para botones reales, 2 clics para el
-		// resto de la fila)
+		// ESCUCHADOR DE CLICS CORREGIDO CON LOS NUEVOS ÍNDICES
 		tblInventario.addMouseListener(new java.awt.event.MouseAdapter() {
 			@Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -131,12 +131,12 @@ public class DlgInventario extends JDialog implements ActionListener {
 					String codigoProd = tblInventario.getValueAt(fila, 1).toString();
 
 					if (evt.getClickCount() == 1) {
-						if (col == 5) {
+						if (col == 4) { // Columna Info
 							infoProducto(idProducto);
-						} else if (col == 6) {
+						} else if (col == 5) { // Columna Eliminar
 							eliminarProducto(idProducto, codigoProd);
 						}
-					} else if (evt.getClickCount() == 2 && col < 5) {
+					} else if (evt.getClickCount() == 2 && col < 4) {
 						infoProducto(idProducto);
 					}
 				}
@@ -158,7 +158,6 @@ public class DlgInventario extends JDialog implements ActionListener {
 		listarInventario();
 	}
 
-	// Clase interna boton (info y eliminar)
 	private class ButtonRenderer extends JPanel implements TableCellRenderer {
 		private static final long serialVersionUID = 1L;
 		private JButton button;
@@ -169,7 +168,7 @@ public class DlgInventario extends JDialog implements ActionListener {
 
 			button = new JButton();
 			button.setMargin(new Insets(0, 0, 0, 0));
-			button.setPreferredSize(new Dimension(25, 18)); // CORREGIDO: Un poco menos ancho (45x18)
+			button.setPreferredSize(new Dimension(25, 18));
 
 			add(button);
 		}
@@ -216,8 +215,9 @@ public class DlgInventario extends JDialog implements ActionListener {
 			String nombreMock = baseDatosMock[i][2].toString();
 
 			if (nombreMock.toLowerCase().contains(nombre.toLowerCase())) {
+				// Se omitió la posición del precio baseDatosMock[i][4] al armar la fila
 				model.addRow(new Object[] { baseDatosMock[i][0], baseDatosMock[i][1], baseDatosMock[i][2],
-						baseDatosMock[i][3], baseDatosMock[i][4], "ℹ️ Info", "❌" });
+						baseDatosMock[i][3], "ℹ️", "❌" });
 				encontrado = true;
 			}
 		}
@@ -239,11 +239,13 @@ public class DlgInventario extends JDialog implements ActionListener {
 		dispose();
 	}
 
+	// SE MODIFICÓ EL LLENADO PARA AJUSTARSE A LAS 6 COLUMNAS RESTANTES
 	private void listarInventario() {
 		model.setRowCount(0);
 		for (int i = 0; i < baseDatosMock.length; i++) {
+			// Saltamos baseDatosMock[i][4] (Precio) para que no vaya al JTable
 			model.addRow(new Object[] { baseDatosMock[i][0], baseDatosMock[i][1], baseDatosMock[i][2],
-					baseDatosMock[i][3], baseDatosMock[i][4], "ℹ️", "❌" });
+					baseDatosMock[i][3], "ℹ️", "❌" });
 		}
 	}
 

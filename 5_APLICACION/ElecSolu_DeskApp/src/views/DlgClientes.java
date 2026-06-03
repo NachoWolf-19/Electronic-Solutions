@@ -147,38 +147,6 @@ public class DlgClientes extends JDialog implements ActionListener {
 		listarClientes();
 	}
 
-	// CORREGIDO: Clase interna para renderizar los botones con tamaño controlado
-	// (25x18)
-	private class ButtonRenderer extends JPanel implements TableCellRenderer {
-		private static final long serialVersionUID = 1L;
-		private JButton button;
-
-		public ButtonRenderer() {
-			setLayout(new GridBagLayout());
-			setOpaque(true);
-
-			button = new JButton();
-			button.setMargin(new Insets(0, 0, 0, 0));
-			button.setPreferredSize(new Dimension(25, 18));
-
-			add(button);
-		}
-
-		@Override
-		public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus,
-				int row, int column) {
-			button.setText(value != null ? value.toString() : "");
-
-			if (isSelected) {
-				setBackground(table.getSelectionBackground());
-			} else {
-				setBackground(table.getBackground());
-			}
-
-			return this;
-		}
-	}
-
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btnBuscar) {
 			actionPerformedBtnBuscar(e);
@@ -256,6 +224,37 @@ public class DlgClientes extends JDialog implements ActionListener {
 		if (acepto) {
 			Mensajes.mensajeExito(this, "El cliente con DNI " + dni + " fue eliminado exitosamente.", "");
 			listarClientes();
+		}
+	}
+
+	// Clase interna boton (info y eliminar)
+	private class ButtonRenderer extends JPanel implements TableCellRenderer {
+		private static final long serialVersionUID = 1L;
+		private JButton button;
+
+		public ButtonRenderer() {
+			setLayout(new GridBagLayout());
+			setOpaque(true);
+
+			button = new JButton();
+			button.setMargin(new Insets(0, 0, 0, 0));
+			button.setPreferredSize(new Dimension(25, 18));
+
+			add(button);
+		}
+
+		@Override
+		public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus,
+				int row, int column) {
+			button.setText(value != null ? value.toString() : "");
+
+			if (isSelected) {
+				setBackground(table.getSelectionBackground());
+			} else {
+				setBackground(table.getBackground());
+			}
+
+			return this;
 		}
 	}
 }
