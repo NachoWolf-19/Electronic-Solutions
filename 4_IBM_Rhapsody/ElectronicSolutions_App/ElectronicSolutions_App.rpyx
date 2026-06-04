@@ -44,9 +44,9 @@
 			</IPropertyContainer>
 			</_properties>
 			<_name type="a">ElectronicSolutions_App</_name>
-			<_modifiedTimeWeak type="a">3.2.2021::1:18:29</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::1:18:29</_modifiedTime>
-			<_lastID type="a">17</_lastID>
+			<_modifiedTimeWeak type="a">3.2.2021::2:4:47</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::2:4:47</_modifiedTime>
+			<_lastID type="a">19</_lastID>
 			<_UserColors type="w">
 				<IRPYRawContainer type="e">
 					<size type="a">16</size>
@@ -133,6 +133,8 @@
 				<value>GUID 8f846c85-421c-40a6-a655-f1f0a050c521</value>
 				<value>GUID 736d1b6b-d4c0-4681-810a-e88a102d9b5d</value>
 				<value>GUID bb69a4ec-072b-4db5-afba-f1fcf5b4d7f5</value>
+				<value>GUID 56c094aa-4ed1-44cc-877d-02ae86c2da72</value>
+				<value>GUID 7b162f36-d1ed-41a7-9fd4-44460ecf004b</value>
 				<value>GUID 41b8ba7c-dbb0-4192-81ea-535be276bd5f</value>
 				<value>GUID f15e2bf7-8353-4fd0-83fe-abf2fac96c98</value>
 				<value>GUID 1391187f-6c8f-46a7-ad8b-5f9a0164ee63</value>
@@ -195,8 +197,16 @@
 			<_id type="a">GUID 736d1b6b-d4c0-4681-810a-e88a102d9b5d</_id>
 		</ISubsystem>
 		<ISubsystem type="e">
-			<fileName type="a">SOLICITUD_DE_SERVICIO</fileName>
+			<fileName type="a">ORDEN_DE_SERVICIO</fileName>
 			<_id type="a">GUID bb69a4ec-072b-4db5-afba-f1fcf5b4d7f5</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">package_17</fileName>
+			<_id type="a">GUID 56c094aa-4ed1-44cc-877d-02ae86c2da72</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">REPUESTOS</fileName>
+			<_id type="a">GUID 7b162f36-d1ed-41a7-9fd4-44460ecf004b</_id>
 		</ISubsystem>
 		<IStructureDiagram type="e">
 			<_id type="a">GUID 41b8ba7c-dbb0-4192-81ea-535be276bd5f</_id>
