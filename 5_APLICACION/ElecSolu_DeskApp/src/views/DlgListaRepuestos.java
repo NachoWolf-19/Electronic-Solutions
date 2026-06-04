@@ -22,7 +22,7 @@ import javax.swing.table.TableCellRenderer;
 import utils.AppUtils;
 import utils.Mensajes;
 
-public class DlgInventario extends JDialog implements ActionListener {
+public class DlgListaRepuestos extends JDialog implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 	private final JPanel pnlContent = new JPanel();
@@ -46,7 +46,7 @@ public class DlgInventario extends JDialog implements ActionListener {
 	 */
 	public static void main(String[] args) {
 		try {
-			DlgInventario dialog = new DlgInventario();
+			DlgListaRepuestos dialog = new DlgListaRepuestos();
 			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 			dialog.setVisible(true);
 		} catch (Exception e) {
@@ -57,7 +57,7 @@ public class DlgInventario extends JDialog implements ActionListener {
 	/**
 	 * Create the dialog.
 	 */
-	public DlgInventario() {
+	public DlgListaRepuestos() {
 		setTitle("Inventario");
 		setResizable(false);
 		setBounds(100, 100, 600, 300);
@@ -231,7 +231,7 @@ public class DlgInventario extends JDialog implements ActionListener {
 	}
 
 	protected void actionPerformedBtnGestionar(ActionEvent e) {
-		DlgRegistrarInventario dlg = new DlgRegistrarInventario();
+		DlgRegistrarRepuesto dlg = new DlgRegistrarRepuesto();
 		AppUtils.abrirDialogo(this, dlg);
 	}
 
@@ -250,7 +250,7 @@ public class DlgInventario extends JDialog implements ActionListener {
 	}
 
 	protected void infoProducto(int idProducto) {
-		DlgInfoInventario dlg = new DlgInfoInventario(idProducto);
+		DlgInfoRepuesto dlg = new DlgInfoRepuesto(idProducto);
 		AppUtils.abrirDialogo(this, dlg);
 	}
 

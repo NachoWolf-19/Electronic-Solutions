@@ -15,7 +15,7 @@ import javax.swing.event.DocumentListener;
 
 import utils.Mensajes;
 
-public class DlgRegistrarInventario extends JDialog implements ActionListener {
+public class DlgRegistrarRepuesto extends JDialog implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 	private final JPanel pnlContent = new JPanel();
@@ -36,7 +36,7 @@ public class DlgRegistrarInventario extends JDialog implements ActionListener {
 	 */
 	public static void main(String[] args) {
 		try {
-			DlgRegistrarInventario dialog = new DlgRegistrarInventario();
+			DlgRegistrarRepuesto dialog = new DlgRegistrarRepuesto();
 			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 			dialog.setVisible(true);
 		} catch (Exception e) {
@@ -47,7 +47,7 @@ public class DlgRegistrarInventario extends JDialog implements ActionListener {
 	/**
 	 * Create the dialog.
 	 */
-	public DlgRegistrarInventario() {
+	public DlgRegistrarRepuesto() {
 		setTitle("Mantenimiento de Inventario");
 		setResizable(false);
 		setBounds(100, 100, 460, 210); // Altura ajustada simétricamente

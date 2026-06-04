@@ -22,7 +22,7 @@ import javax.swing.table.TableCellRenderer;
 import utils.AppUtils;
 import utils.Mensajes;
 
-public class DlgClientes extends JDialog implements ActionListener {
+public class DlgListaClientes extends JDialog implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 	private final JPanel pnlContent = new JPanel();
@@ -40,7 +40,7 @@ public class DlgClientes extends JDialog implements ActionListener {
 
 	public static void main(String[] args) {
 		try {
-			DlgClientes dialog = new DlgClientes();
+			DlgListaClientes dialog = new DlgListaClientes();
 			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 			dialog.setVisible(true);
 		} catch (Exception e) {
@@ -48,7 +48,7 @@ public class DlgClientes extends JDialog implements ActionListener {
 		}
 	}
 
-	public DlgClientes() {
+	public DlgListaClientes() {
 		setTitle("Clientes");
 		setResizable(false);
 		setBounds(100, 100, 600, 300);

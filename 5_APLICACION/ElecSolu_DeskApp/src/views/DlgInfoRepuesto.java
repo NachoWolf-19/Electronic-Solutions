@@ -15,7 +15,7 @@ import javax.swing.event.DocumentListener;
 
 import utils.Mensajes;
 
-public class DlgInfoInventario extends JDialog implements ActionListener {
+public class DlgInfoRepuesto extends JDialog implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 	private final JPanel pnlContent = new JPanel();
@@ -50,7 +50,7 @@ public class DlgInfoInventario extends JDialog implements ActionListener {
 	 */
 	public static void main(String[] args) {
 		try {
-			DlgInfoInventario dialog = new DlgInfoInventario(1);
+			DlgInfoRepuesto dialog = new DlgInfoRepuesto(1);
 			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 			dialog.setVisible(true);
 		} catch (Exception e) {
@@ -61,7 +61,7 @@ public class DlgInfoInventario extends JDialog implements ActionListener {
 	/**
 	 * Create the dialog.
 	 */
-	public DlgInfoInventario(int idRepuesto) {
+	public DlgInfoRepuesto(int idRepuesto) {
 		this.idRepuesto = idRepuesto;
 
 		setTitle("Información del Repuesto");

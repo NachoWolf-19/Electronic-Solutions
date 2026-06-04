@@ -44,8 +44,8 @@
 			</IPropertyContainer>
 			</_properties>
 			<_name type="a">ElectronicSolutions_App</_name>
-			<_modifiedTimeWeak type="a">3.2.2021::2:4:47</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::2:4:47</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.1.2021::5:6:18</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::6:35:50</_modifiedTime>
 			<_lastID type="a">19</_lastID>
 			<_UserColors type="w">
 				<IRPYRawContainer type="e">
@@ -125,15 +125,12 @@
 				<value>GUID 8514b014-6f40-4c8c-98d6-7b6879db98d0</value>
 				<value>GUID f883ccaf-9b1e-452f-809a-40b7ddb88a81</value>
 				<value>GUID 018fd50e-cdfb-4d1c-8d00-c6e75ba697d6</value>
-				<value>GUID 4c295f10-08e3-4209-8c16-756947e54b89</value>
 				<value>GUID 6890d114-90ed-4cfd-882e-b2f7beac88f9</value>
 				<value>GUID ab54cf7a-0b5c-4089-a7b8-4f53e5d21178</value>
 				<value>GUID 18228175-eed2-4f38-be91-92e8def36432</value>
-				<value>GUID 0a3befea-ed8d-4887-b97b-55f487c027b1</value>
 				<value>GUID 8f846c85-421c-40a6-a655-f1f0a050c521</value>
 				<value>GUID 736d1b6b-d4c0-4681-810a-e88a102d9b5d</value>
 				<value>GUID bb69a4ec-072b-4db5-afba-f1fcf5b4d7f5</value>
-				<value>GUID 56c094aa-4ed1-44cc-877d-02ae86c2da72</value>
 				<value>GUID 7b162f36-d1ed-41a7-9fd4-44460ecf004b</value>
 				<value>GUID 41b8ba7c-dbb0-4192-81ea-535be276bd5f</value>
 				<value>GUID f15e2bf7-8353-4fd0-83fe-abf2fac96c98</value>
@@ -158,20 +155,16 @@
 		</ISubsystem>
 		<IProfile type="e">
 			<fileName type="a">AnalysisModel</fileName>
-			<_persistAs type="a">Z:\profiles\AnalysisProfile</_persistAs>
+			<_persistAs type="a">Z:\4_IBM_Rhapsody\profiles\AnalysisProfile</_persistAs>
 			<_id type="a">GUID f883ccaf-9b1e-452f-809a-40b7ddb88a81</_id>
 			<_partOfTheModelKind type="a">referenceunit</_partOfTheModelKind>
 		</IProfile>
 		<IProfile type="e">
 			<fileName type="a">BusinessModeling</fileName>
-			<_persistAs type="a">Z:\profiles\BusinessModelingProfile</_persistAs>
+			<_persistAs type="a">Z:\4_IBM_Rhapsody\profiles\BusinessModelingProfile</_persistAs>
 			<_id type="a">GUID 018fd50e-cdfb-4d1c-8d00-c6e75ba697d6</_id>
 			<_partOfTheModelKind type="a">referenceunit</_partOfTheModelKind>
 		</IProfile>
-		<ISubsystem type="e">
-			<fileName type="a">package_8</fileName>
-			<_id type="a">GUID 4c295f10-08e3-4209-8c16-756947e54b89</_id>
-		</ISubsystem>
 		<ISubsystem type="e">
 			<fileName type="a">REPORTE_INGRESOS</fileName>
 			<_id type="a">GUID 6890d114-90ed-4cfd-882e-b2f7beac88f9</_id>
@@ -185,10 +178,6 @@
 			<_id type="a">GUID 18228175-eed2-4f38-be91-92e8def36432</_id>
 		</ISubsystem>
 		<ISubsystem type="e">
-			<fileName type="a">package_13</fileName>
-			<_id type="a">GUID 0a3befea-ed8d-4887-b97b-55f487c027b1</_id>
-		</ISubsystem>
-		<ISubsystem type="e">
 			<fileName type="a">DETALLE_EQUIPO</fileName>
 			<_id type="a">GUID 8f846c85-421c-40a6-a655-f1f0a050c521</_id>
 		</ISubsystem>
@@ -199,10 +188,6 @@
 		<ISubsystem type="e">
 			<fileName type="a">ORDEN_DE_SERVICIO</fileName>
 			<_id type="a">GUID bb69a4ec-072b-4db5-afba-f1fcf5b4d7f5</_id>
-		</ISubsystem>
-		<ISubsystem type="e">
-			<fileName type="a">package_17</fileName>
-			<_id type="a">GUID 56c094aa-4ed1-44cc-877d-02ae86c2da72</_id>
 		</ISubsystem>
 		<ISubsystem type="e">
 			<fileName type="a">REPUESTOS</fileName>
@@ -409,8 +394,8 @@
 			</_properties>
 			<_name type="a">Structura del Proyecto</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.1.2021::22:8:32</_modifiedTime>
-			<_lastModifiedTime type="a">3.1.2021::22:8:32</_lastModifiedTime>
+			<_modifiedTime type="a">3.1.2021::5:6:18</_modifiedTime>
+			<_lastModifiedTime type="a">3.1.2021::5:6:18</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
