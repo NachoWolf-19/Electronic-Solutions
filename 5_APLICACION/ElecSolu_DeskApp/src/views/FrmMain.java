@@ -286,7 +286,7 @@ public class FrmMain extends JFrame implements ActionListener {
 	}
 
 	protected void actionPerformedMntmClientes(ActionEvent e) {
-		DlgListaClientes dlg = new DlgListaClientes();
+		DlgListaCliente dlg = new DlgListaClientes();
 		AppUtils.abrirDialogo(this, dlg);
 	}
 
