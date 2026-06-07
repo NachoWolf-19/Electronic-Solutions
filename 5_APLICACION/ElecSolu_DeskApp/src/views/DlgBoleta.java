@@ -9,6 +9,8 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 import javax.swing.JButton;
@@ -36,8 +38,10 @@ public class DlgBoleta extends JDialog implements ActionListener {
 	 */
 	public static void main(String[] args) {
 		try {
-			DlgBoleta dialog = new DlgBoleta("12345678", "Reparación", "Sintetizador Korg", "Teclados",
-					"Falla en los potenciómetros");
+			// Corrección estricta de los placeholders para evitar errores de compilación
+			DlgBoleta dialog = new DlgBoleta("12345678", "Reparación", "Sintetizador Korg", "Teclados / Sintetizadores",
+					"Falla en los potenciómetros de volumen principal y pitch bend.", 40.00, 6,
+					LocalDate.now().plusDays(5));
 			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 			dialog.setVisible(true);
 		} catch (Exception e) {
@@ -48,13 +52,14 @@ public class DlgBoleta extends JDialog implements ActionListener {
 	/**
 	 * Create the dialog.
 	 */
-	public DlgBoleta(String dni, String servicio, String equipo, String categoria, String descripcion) {
+	public DlgBoleta(String dni, String servicio, String equipo, String categoria, String descripcion, Double precio,
+			int garantia, LocalDate fechaEstimada) {
 		this.dni = dni;
 
 		setTitle("Vista Previa de la Orden");
 		setModal(true);
 		setResizable(false);
-		setBounds(100, 100, 480, 500);
+		setBounds(100, 100, 480, 520); // Ajuste ligero de altura para el ticket extendido
 		setLocationRelativeTo(null);
 
 		getContentPane().setLayout(new BorderLayout());
@@ -89,7 +94,8 @@ public class DlgBoleta extends JDialog implements ActionListener {
 			}
 		}
 
-		generarContenidoBoleta(servicio, equipo, categoria, descripcion);
+		// Ahora se le envían los nuevos datos calculados
+		generarContenidoBoleta(servicio, equipo, categoria, descripcion, precio, garantia, fechaEstimada);
 	}
 
 	@Override
@@ -102,10 +108,18 @@ public class DlgBoleta extends JDialog implements ActionListener {
 		}
 	}
 
-	private void generarContenidoBoleta(String servicio, String equipo, String categoria, String descripcion) {
+	private void generarContenidoBoleta(String servicio, String equipo, String categoria, String descripcion,
+			Double precio, int garantia, LocalDate fechaEstimada) {
+
 		// Simulación de número de orden correlativo y fecha del sistema actual
 		int numOrdenSimulado = (int) (Math.random() * 9000 + 1000);
 		String fechaActual = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(new Date());
+
+		// Formateo formal del LocalDate para la impresión gráfica
+		String fechaEntregaStr = "No especificada";
+		if (fechaEstimada != null) {
+			fechaEntregaStr = fechaEstimada.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+		}
 
 		StringBuilder sb = new StringBuilder();
 		sb.append("==================================================\n");
@@ -122,6 +136,11 @@ public class DlgBoleta extends JDialog implements ActionListener {
 		sb.append(String.format(" Categoría    : %s\n", categoria));
 		sb.append(String.format(" Equipo       : %s\n", equipo));
 		sb.append("--------------------------------------------------\n");
+		sb.append(" TÉRMINOS Y COSTOS:\n");
+		sb.append(String.format(" Precio       : S/ %.2f\n", precio != null ? precio : 0.0));
+		sb.append(String.format(" Garantía     : %d meses\n", garantia));
+		sb.append(String.format(" Fec. Entrega : %s\n", fechaEntregaStr));
+		sb.append("--------------------------------------------------\n");
 		sb.append(" DESCRIPCIÓN DE LA FALLA:\n");
 		sb.append(wrapText(descripcion, 46) + "\n");
 		sb.append("==================================================\n");
@@ -134,7 +153,6 @@ public class DlgBoleta extends JDialog implements ActionListener {
 	private void actionPerformedBtnGuardar(ActionEvent e) {
 		String nombreArchivo = "boleta_ORD_" + dni + ".txt";
 
-		// Escritura limpia y directa del JTextArea en un archivo plano .txt
 		try (BufferedWriter bw = new BufferedWriter(new FileWriter(nombreArchivo))) {
 			txtBoleta.write(bw);
 			Mensajes.mensajeExito(this, "Archivo guardado exitosamente como:\n" + nombreArchivo, "Éxito");
@@ -152,6 +170,8 @@ public class DlgBoleta extends JDialog implements ActionListener {
 	 * de los márgenes de la boleta impresa.
 	 */
 	private String wrapText(String text, int limit) {
+		if (text == null || text.isEmpty())
+			return " Sin descripción.";
 		StringBuilder sb = new StringBuilder(" ");
 		int charCount = 0;
 		for (String word : text.split(" ")) {

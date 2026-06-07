@@ -140,7 +140,7 @@ public class FrmMain extends JFrame implements ActionListener {
 				new Object[][] { { "Juan Pérez", "Laptop Asus", "05/06/2026", "Reparación", "Pendiente" },
 						{ "María López", "Impresora HP", "02/06/2026", "Mantenimiento", "En Proceso" },
 						{ "Carlos Gómez", "PC Gamer", "08/06/2026", "Reparación", "Terminado" } },
-				new String[] { "Cliente", "Electrónico", "Fecha de finalización estimada", "Servicio", "Estado" }) {
+				new String[] { "Cliente", "Equipo", "Fecha de finalización estimada", "Servicio", "Estado" }) {
 			private static final long serialVersionUID = 1L;
 
 			@Override
@@ -286,7 +286,7 @@ public class FrmMain extends JFrame implements ActionListener {
 	}
 
 	protected void actionPerformedMntmClientes(ActionEvent e) {
-		DlgListaCliente dlg = new DlgListaClientes();
+		DlgListaClientes dlg = new DlgListaClientes();
 		AppUtils.abrirDialogo(this, dlg);
 	}
 

@@ -360,8 +360,95 @@ DELIMITER ;
 
 -- =================================== Tabla Ordenes
 -- Create
+DELIMITER //
+CREATE PROCEDURE usp_RegistrarOrden(
+	IN DNI CHAR(8),
+    IN tipoServicio TINYINT,
+    IN equipo VARCHAR(100),
+    IN categoria INT,
+    IN descripcion TEXT,
+    IN tecnico INT,
+    IN entrega DATE,
+    IN garantia INT,
+    IN precio DECIMAL(10,2)
+)
+BEGIN
+	DECLARE idCliente INT;
+	DECLARE cliente VARCHAR(110);
+	DECLARE servicio VARCHAR(15);
+    
+    SELECT clienteId, CONCAT(clienteNombres, ' ', clienteApellidos)
+    INTO idCliente, cliente
+    FROM clientes
+    WHERE clienteDNI = DNI;
+    
+    IF idCliente IS NULL THEN
+		SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Error: El DNI no pertenece a ningun cliente en la base de datos. Primero registre al cliente';
+	END IF;
+    
+    IF tipoServicio = 1 THEN
+		SET servicio = 'Mantenimiento';
+	ELSEIF tipoServicio = 2 THEN
+		SET servicio = 'Reparacion';
+	ELSE
+		SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Error: No se puede registrar otro tipo de servicio que no sea mantenimiento (1) o reparación (2).';
+	END IF;
+       
+    INSERT INTO ordenes(clienteId, ordenClienteActual, ordenServicio, ordenEquipo, categoriaId, ordenDescripcion, 
+		tecnicoId, ordenFechaEntrega, ordenGarantiaMeses, ordenPrecio)
+    VALUES (idCliente, cliente, servicio, equipo, categoria, descripcion, tecnico, entrega, garantia, precio);
+END //
+DELIMITER ;
 -- Read
+CREATE VIEW vw_ListaOrdenesActivas AS
+SELECT 
+	CONCAT(C.clienteNombres, ' ', C.clienteApellidos) AS cliente,
+    O.ordenEquipo AS equipo,
+    O.ordenFechaEntrega AS fecha_estimada,
+    O.ordenServicio AS servicio,
+    O.ordenEstado AS estado
+FROM ordenes AS O
+	INNER JOIN clientes AS C ON O.clienteId = C.clienteId
+WHERE O.ordenEstado IN ('Registrado', 'En Taller', 'Entregable');
+
+CREATE VIEW vw_HistorialOrdenes AS
+SELECT
+	O.ordenFechaRegistro AS fecha_registro,
+    CONCAT(C.clienteNombres, ' ', C.clienteApellidos) AS cliente,
+    O.ordenEquipo AS equipo,
+    O.ordenServicio AS servicio,
+    O.ordenFechaEntrega AS fecha_estimada
+FROM ordenes AS O
+	INNER JOIN clientes AS C ON O.clienteId = C.clienteId;
+    
+DELIMITER //
+CREATE PROCEDURE usp_ListarOrdenes(
+	IN tipo INT
+)
+BEGIN 
+	IF tipo = 0 THEN
+		SELECT fecha_registro, cliente, equipo, servicio, fecha_estimada
+        FROM vw_HistorialOrdenes;
+	ELSEIF tipo = 1 THEN
+		SELECT fecha_registro, cliente, equipo, servicio, fecha_estimada
+        FROM vw_HistorialOrdenes
+        WHERE servicio = 'Mantenimiento';
+	ELSEIF tipo = 2 THEN
+		SELECT fecha_registro, cliente, equipo, servicio, fecha_estimada
+        FROM vw_HistorialOrdenes
+        WHERE servicio = 'Reparacion';
+	ELSE
+		SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Error: No se puede listar otro tipo de servicio que no sean las siguientes opciones: todos (0), mantenimiento (1) o reparación (2).';
+	END IF;
+END //
+DELIMITER ;
+
 -- Update
+
+
 -- =================================== Tabla Detalles de Ordenes
 -- Create
 -- Read
