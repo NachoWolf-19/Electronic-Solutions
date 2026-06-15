@@ -11,7 +11,7 @@
 			<_id type="a">GUID b25d16a9-8a30-4313-8b37-64fb448fc58f</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">MCU</_name>
-			<_modifiedTimeWeak type="a">3.1.2021::6:32:7</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">3.2.2021::0:30:43</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -19,10 +19,10 @@
 					<_hid type="a">GUID f15e2bf7-8353-4fd0-83fe-abf2fac96c98</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">3.1.2021::6:35:50</_modifiedTime>
+			<_modifiedTime type="a">3.2.2021::1:26:49</_modifiedTime>
 			<_lastID type="a">51</_lastID>
-			<weakCGTime type="a">3.1.2021::6:32:7</weakCGTime>
-			<strongCGTime type="a">3.2.2021::3:26:30</strongCGTime>
+			<weakCGTime type="a">3.2.2021::0:30:43</weakCGTime>
+			<strongCGTime type="a">3.2.2021::0:3:36</strongCGTime>
 			<_defaultComposite type="s">GUID f598d25f-bad3-4d82-868e-776117702cbc</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
 			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
@@ -49,11 +49,9 @@
 				<value>GUID a4084f94-a98b-475a-a971-286729f29613</value>
 				<value>GUID 24c8f9fb-ccb7-4deb-a3c3-11aea994de68</value>
 				<value>GUID 75ea3e9a-7497-4401-a79c-a9472e7c8b47</value>
-				<value>GUID 25bb9edf-6d7c-46ad-96af-0fb78c442eaf</value>
 				<value>GUID 49027395-716c-4777-8e7b-6fa75f1c039e</value>
 				<value>GUID dd5d34fa-1684-4bee-b6c5-ffde1437f0e7</value>
 				<value>GUID 5f15080b-70b4-4e29-bc7a-506162abdd88</value>
-				<value>GUID 5fc9c80a-4e60-4687-bf6e-4e7a3aa07ccb</value>
 				<value>GUID 217b64d6-53be-46f1-afe3-7673469cd61f</value>
 				<value>GUID c97dcc09-c5a9-46ce-8c47-dbd63be07835</value>
 				<value>GUID 97bf54b6-ebb3-4bb0-a2e9-eed1b9f0adfc</value>
@@ -1552,7 +1550,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsUsuario</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1569,7 +1566,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsCU_Iniciar Sesion</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3325,7 +3321,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsRecepcionista</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3342,7 +3337,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsCU_Registrar Orden</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3532,7 +3526,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsUsuario</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3549,7 +3542,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsCU_Listar Ordenes Activas</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3739,7 +3731,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsEncargado_Logistica_1</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3756,7 +3747,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsCU_Listar Repuestos_1</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3946,7 +3936,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsTecnico</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3963,7 +3952,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsCU_Verificar Orden</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -4429,7 +4417,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsRecepcionista</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -4446,7 +4433,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsCU_Listar Clientes</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -4636,7 +4622,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsRecepcionista</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -4653,7 +4638,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsCU_Verificar Orden</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -4843,7 +4827,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsAdministrador</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -4860,7 +4843,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsCU_Listar Ordenes</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -5050,7 +5032,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsAdministrador</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -5067,7 +5048,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsCU_Generar Reporte</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -5600,7 +5580,6 @@
 			<m_bShowQualifier2 type="a">0</m_bShowQualifier2>
 			<m_sourceRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsAdministrador</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -5617,7 +5596,6 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
-					<m_str type="a">itsCU_Verificar Orden</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -6096,11 +6074,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -6136,7 +6109,7 @@
 			<_id type="a">GUID 8ea159d0-1f3a-4419-956e-f96b6785c791</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">CU_Listar Clientes</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">3.1.2021::6:22:10</_modifiedTimeWeak>
 			<_modifiedTime type="a">3.1.2021::6:22:10</_modifiedTime>
 			<_lastID type="a">2</_lastID>
 			<weakCGTime type="a">3.1.2021::6:22:10</weakCGTime>
@@ -6146,16 +6119,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<Diagrams type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</Diagrams>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -6257,7 +6220,7 @@
 			<_id type="a">GUID 04f142dc-822f-4531-a4d4-57e031e6970e</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">CU_Registrar Orden</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">3.1.2021::5:26:15</_modifiedTimeWeak>
 			<_modifiedTime type="a">3.1.2021::5:41:38</_modifiedTime>
 			<_lastID type="a">3</_lastID>
 			<weakCGTime type="a">3.1.2021::5:26:15</weakCGTime>
@@ -6267,16 +6230,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<Diagrams type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</Diagrams>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -6411,7 +6364,7 @@
 			<_id type="a">GUID c156bcb0-07de-4170-9536-bb01eb261f6b</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">CU_Listar Ordenes Activas</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">3.1.2021::6:5:57</_modifiedTimeWeak>
 			<_modifiedTime type="a">3.1.2021::6:5:57</_modifiedTime>
 			<_lastID type="a">2</_lastID>
 			<weakCGTime type="a">3.1.2021::6:5:57</weakCGTime>
@@ -6421,11 +6374,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -6573,7 +6521,7 @@
 			<_id type="a">GUID a77beb07-ce5d-40cd-ac80-168b6a59b487</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">CU_Listar Repuestos</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">3.1.2021::5:35:52</_modifiedTimeWeak>
 			<_modifiedTime type="a">3.1.2021::5:59:48</_modifiedTime>
 			<_lastID type="a">2</_lastID>
 			<weakCGTime type="a">3.1.2021::5:35:52</weakCGTime>
@@ -6583,11 +6531,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -6712,7 +6655,7 @@
 			<_id type="a">GUID 257b20af-b3c5-45dc-8e29-7b366a4c1bb9</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">CU_Verificar Orden</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">3.1.2021::6:9:52</_modifiedTimeWeak>
 			<_modifiedTime type="a">3.1.2021::6:29:13</_modifiedTime>
 			<_lastID type="a">3</_lastID>
 			<weakCGTime type="a">3.1.2021::6:9:52</weakCGTime>
@@ -6722,16 +6665,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<Diagrams type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</Diagrams>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -6888,11 +6821,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -6937,11 +6865,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -6952,7 +6875,7 @@
 			<_id type="a">GUID 67f77ecc-d9df-49df-87e7-db361c7e9012</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">CU_Generar Reporte</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">3.1.2021::6:33:2</_modifiedTimeWeak>
 			<_modifiedTime type="a">3.1.2021::6:33:2</_modifiedTime>
 			<_lastID type="a">3</_lastID>
 			<weakCGTime type="a">3.1.2021::6:33:2</weakCGTime>
@@ -6962,11 +6885,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -7101,7 +7019,7 @@
 			<_id type="a">GUID 000f5e5d-6815-4a7e-a75d-e526ba4356fa</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">CU_Listar Ordenes</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">3.1.2021::6:8:20</_modifiedTimeWeak>
 			<_modifiedTime type="a">3.1.2021::6:16:27</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<weakCGTime type="a">3.1.2021::6:8:20</weakCGTime>
@@ -7111,11 +7029,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -7193,11 +7106,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -7217,11 +7125,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -7241,11 +7144,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -7256,7 +7154,7 @@
 			<_id type="a">GUID e4c49e0d-f086-47c2-a5f8-615155a76586</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">CU_Actualizar Estado de Orden</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">3.1.2021::6:7:36</_modifiedTimeWeak>
 			<_modifiedTime type="a">3.1.2021::6:7:36</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<weakCGTime type="a">3.1.2021::6:7:36</weakCGTime>
@@ -7266,11 +7164,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -7325,11 +7218,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -7349,11 +7237,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -7373,11 +7256,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -7397,11 +7275,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -7421,11 +7294,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
@@ -7445,31 +7313,12 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 					<size type="a">0</size>
 				</IRPYRawContainer>
 			</_EntryPoints>
 		</IUseCase>
-		<IActor type="e">
-			<_id type="a">GUID 25bb9edf-6d7c-46ad-96af-0fb78c442eaf</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">actor_1</_name>
-			<_modifiedTimeWeak type="a">3.1.2021::6:7:12</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::0:12:16</_modifiedTime>
-			<weakCGTime type="a">3.1.2021::6:7:12</weakCGTime>
-			<strongCGTime type="a">3.1.2021::6:7:12</strongCGTime>
-			<_itsStateChart type="r">
-				<IHandle type="e">
-				</IHandle>
-			</_itsStateChart>
-			<_classModifier type="a">Unspecified</_classModifier>
-		</IActor>
 		<IActor type="e">
 			<_id type="a">GUID 49027395-716c-4777-8e7b-6fa75f1c039e</_id>
 			<_myState type="a">8192</_myState>
@@ -7482,11 +7331,6 @@
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
-			<Associations type="c">
-				<IRPYRawContainer type="e">
-					<size type="a">0</size>
-				</IRPYRawContainer>
-			</Associations>
 			<_classModifier type="a">Unspecified</_classModifier>
 		</IActor>
 		<IActor type="e">
@@ -7602,7 +7446,7 @@
 		<IGeneralization type="e">
 			<_id type="a">GUID 049b4214-8fa1-4c00-909f-11f59e4ba312</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.31.1969::19:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
@@ -7679,27 +7523,22 @@
 			<_navigability type="a">Navigable</_navigability>
 		</IAssociationEnd>
 		<IActor type="e">
-			<_id type="a">GUID 5fc9c80a-4e60-4687-bf6e-4e7a3aa07ccb</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">actor_5</_name>
-			<_modifiedTimeWeak type="a">3.1.2021::6:7:12</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::0:12:27</_modifiedTime>
-			<weakCGTime type="a">3.1.2021::6:7:12</weakCGTime>
-			<strongCGTime type="a">3.1.2021::6:7:12</strongCGTime>
-			<_itsStateChart type="r">
-				<IHandle type="e">
-				</IHandle>
-			</_itsStateChart>
-			<_classModifier type="a">Unspecified</_classModifier>
-		</IActor>
-		<IActor type="e">
 			<_id type="a">GUID 217b64d6-53be-46f1-afe3-7673469cd61f</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Recepcionista</_name>
-			<_modifiedTimeWeak type="a">3.1.2021::6:13:23</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.1.2021::6:13:23</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.2.2021::1:30:20</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::CLIENTE</_hsubsystem>
+					<_hname type="a">DCA DE CU LISTAR CLIENTES</_hname>
+					<_hid type="a">GUID 7efc19c7-81a0-481f-aa83-f60975c6e3fe</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:30:20</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">3.1.2021::6:13:23</weakCGTime>
+			<weakCGTime type="a">3.2.2021::1:30:20</weakCGTime>
 			<strongCGTime type="a">3.1.2021::6:7:12</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">

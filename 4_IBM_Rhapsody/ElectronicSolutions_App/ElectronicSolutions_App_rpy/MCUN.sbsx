@@ -25,7 +25,7 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">3.1.2021::23:59:4</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">3.2.2021::0:30:12</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -33,10 +33,10 @@
 					<_hid type="a">GUID f15e2bf7-8353-4fd0-83fe-abf2fac96c98</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">3.2.2021::1:16:21</_modifiedTime>
+			<_modifiedTime type="a">3.2.2021::1:26:49</_modifiedTime>
 			<_lastID type="a">13</_lastID>
-			<weakCGTime type="a">3.1.2021::23:59:4</weakCGTime>
-			<strongCGTime type="a">3.2.2021::3:28:38</strongCGTime>
+			<weakCGTime type="a">3.2.2021::0:30:12</weakCGTime>
+			<strongCGTime type="a">3.2.2021::0:3:36</strongCGTime>
 			<_defaultComposite type="s">GUID 2c1fe2a4-bbff-44ae-bab8-e2b8e71b112c</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
 			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
@@ -1836,8 +1836,8 @@
 			</_properties>
 			<_name type="a">CUN vs ON</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.1.2021::23:59:13</_modifiedTime>
-			<_lastModifiedTime type="a">3.1.2021::23:59:13</_lastModifiedTime>
+			<_modifiedTime type="a">3.2.2021::0:42:37</_modifiedTime>
+			<_lastModifiedTime type="a">3.2.2021::0:42:37</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -3543,9 +3543,18 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">3.1.2021::23:59:4</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.1.2021::23:59:4</_modifiedTime>
-			<weakCGTime type="a">3.1.2021::23:59:4</weakCGTime>
+			<_modifiedTimeWeak type="a">3.2.2021::0:30:12</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::CLIENTE</_hsubsystem>
+					<_hname type="a">DCA DE CU LISTAR CLIENTES</_hname>
+					<_hid type="a">GUID 7efc19c7-81a0-481f-aa83-f60975c6e3fe</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::0:30:12</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::0:30:12</weakCGTime>
 			<strongCGTime type="a">3.2.2021::4:5:24</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
