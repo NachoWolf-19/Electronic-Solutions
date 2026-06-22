@@ -48,7 +48,7 @@ public class DlgRegistrarRepuesto extends JDialog implements ActionListener {
 	 * Create the dialog.
 	 */
 	public DlgRegistrarRepuesto() {
-		setTitle("Mantenimiento de Inventario");
+		setTitle("Registrar Repuesto");
 		setResizable(false);
 		setBounds(100, 100, 460, 210); // Altura ajustada simétricamente
 		getContentPane().setLayout(new BorderLayout());

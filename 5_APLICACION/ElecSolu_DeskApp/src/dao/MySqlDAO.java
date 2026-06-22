@@ -1,6 +1,5 @@
 package dao;
 
-import controller.MySqlCategoriaDAO;
 import controller.MySqlClienteDAO;
 import controller.MySqlDetalleOrdenDAO;
 import controller.MySqlOrdenDAO;
@@ -8,7 +7,6 @@ import controller.MySqlReporteDAO;
 import controller.MySqlRepuestoDAO;
 import controller.MySqlTecnicoDAO;
 import controller.MySqlUsuarioDAO;
-import interfaces.CategoriaDAO;
 import interfaces.ClienteDAO;
 import interfaces.DetalleOrdenDAO;
 import interfaces.OrdenDAO;
@@ -27,11 +25,6 @@ public class MySqlDAO extends DAO {
 	@Override
 	public RepuestoDAO getRepuestoDAO() {
 		return new MySqlRepuestoDAO();
-	}
-
-	@Override
-	public CategoriaDAO getCategoriaDAO() {
-		return new MySqlCategoriaDAO();
 	}
 
 	@Override

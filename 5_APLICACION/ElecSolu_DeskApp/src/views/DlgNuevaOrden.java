@@ -56,7 +56,7 @@ public class DlgNuevaOrden extends JDialog implements ActionListener {
 	 * Create the dialog.
 	 */
 	public DlgNuevaOrden() {
-		setTitle("Registro de Nueva Orden de Servicio");
+		setTitle("Registrar Nueva Orden");
 		setModal(true);
 		setResizable(false);
 		setBounds(100, 100, 460, 460);

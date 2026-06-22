@@ -110,6 +110,7 @@ public class DlgRegistrarCliente extends JDialog implements ActionListener {
 		btnProcesar = new JButton("Procesar");
 		btnProcesar.addActionListener(this);
 		btnProcesar.setBounds(320, 19, 100, 23);
+		btnProcesar.setEnabled(false);
 		pnlContent.add(btnProcesar);
 
 		btnCerrar = new JButton("Cerrar");

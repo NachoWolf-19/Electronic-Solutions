@@ -1,6 +1,5 @@
 package dao;
 
-import interfaces.CategoriaDAO;
 import interfaces.ClienteDAO;
 import interfaces.DetalleOrdenDAO;
 import interfaces.OrdenDAO;
@@ -13,8 +12,6 @@ public abstract class DAO {
 	public abstract ClienteDAO getClienteDAO();
 
 	public abstract RepuestoDAO getRepuestoDAO();
-
-	public abstract CategoriaDAO getCategoriaDAO();
 
 	public abstract TecnicoDAO getTecnicoDAO();
 

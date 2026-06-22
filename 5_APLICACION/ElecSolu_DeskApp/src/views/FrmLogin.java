@@ -13,8 +13,6 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
-import com.formdev.flatlaf.FlatDarkLaf;
-
 import utils.Mensajes;
 
 public class FrmLogin extends JFrame {
@@ -25,7 +23,6 @@ public class FrmLogin extends JFrame {
 	private JTextField txtUsuario;
 
 	public static void main(String[] args) {
-		FlatDarkLaf.setup(); // Requiere el .jar de FlatLaf en el proyecto
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -39,6 +36,7 @@ public class FrmLogin extends JFrame {
 	}
 
 	public FrmLogin() {
+		setTitle("Iniciar Session");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
