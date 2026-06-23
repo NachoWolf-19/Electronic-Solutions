@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID a3fc9529-e51a-4ef2-aef9-2cef13b64208</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">A_CAPA_PRESENTACION</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">Layer</_hname>
+							<_hid type="a">GUID b6902a2d-ecf4-4ebd-89b1-12a076bc710a</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.1.2021::20:5:18</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\MD.sbsx</_hfilename>
+					<_hsubsystem type="a">MD</_hsubsystem>
+					<_hname type="a">ARQUITECTURA DE DISE%D1O</_hname>
+					<_hid type="a">GUID af54f741-a85d-4060-bea3-0ea9ebb4055c</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.1.2021::22:18:29</_modifiedTime>
+			<_lastID type="a">2</_lastID>
+			<weakCGTime type="a">3.1.2021::20:5:18</weakCGTime>
+			<strongCGTime type="a">3.1.2021::20:2:57</strongCGTime>
+			<_defaultComposite type="s">GUID bc258bde-506d-4538-81a2-fa00e25eb1b2</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">12.31.1969::19:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID efc310b5-ec3c-47fc-b2b6-12ac25af264a</value>
+				<value>GUID bce4302c-1fd5-406c-9706-1d972ff38ec8</value>
+				<value>GUID bc258bde-506d-4538-81a2-fa00e25eb1b2</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IDependency type="e">
+			<_id type="a">GUID efc310b5-ec3c-47fc-b2b6-12ac25af264a</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">B_CAPA_CONTROLADORA</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::20:2:30</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::20:2:30</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">ISubsystem</_hm2Class>
+					<_hfilename type="a">.\B_CAPA_CONTROLADORA.sbsx</_hfilename>
+					<_hname type="a">B_CAPA_CONTROLADORA</_hname>
+					<_hid type="a">GUID f1223e71-ab2f-42dc-ba13-72346baa4f3a</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">ISubsystem</_hm2Class>
+					<_hid type="a">GUID a3fc9529-e51a-4ef2-aef9-2cef13b64208</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<ISubsystem type="e">
+			<fileName type="a">CP_ORDEN</fileName>
+			<_id type="a">GUID bce4302c-1fd5-406c-9706-1d972ff38ec8</_id>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID bc258bde-506d-4538-81a2-fa00e25eb1b2</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.31.1969::19:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+
