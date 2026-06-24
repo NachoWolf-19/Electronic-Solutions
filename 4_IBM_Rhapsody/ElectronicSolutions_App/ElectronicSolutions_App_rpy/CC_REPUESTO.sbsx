@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 4d93a8c5-1ef5-419c-8aa8-5bcbcb0aaa25</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">CC_REPUESTO</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::1:50:19</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::1:54:47</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:50:19</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:50:9</strongCGTime>
+			<_defaultComposite type="s">GUID b70f518d-4ca3-4d27-9159-35f474a978c3</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">12.31.1969::19:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID b70f518d-4ca3-4d27-9159-35f474a978c3</value>
+				<value>GUID ab1c8898-f9e2-4c98-bb77-4facf409cc79</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID b70f518d-4ca3-4d27-9159-35f474a978c3</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.31.1969::19:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		<IClass type="e">
+			<_id type="a">GUID ab1c8898-f9e2-4c98-bb77-4facf409cc79</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Repuesto_Servlet</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">HttpServlet</_hname>
+							<_hid type="a">GUID 3370cd12-7f9f-4b57-bbbe-7f1d438dfefe</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:50:19</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\REPUESTOS_1.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::REPUESTO</_hsubsystem>
+					<_hname type="a">DCD DE CU LISTAR REPUESTOS</_hname>
+					<_hid type="a">GUID c99bfa88-f848-4e68-8123-df04f3a25548</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:50:19</_modifiedTime>
+			<_lastID type="a">3</_lastID>
+			<weakCGTime type="a">3.2.2021::2:25:4</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:50:19</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 33e37030-6aff-4a71-8d10-dbe0e8c2f1c4</value>
+				<value>GUID 8db127a8-e1da-4cb4-913d-d55d6c8a13f2</value>
+				<value>GUID d5e3f0f7-7f08-45bb-82db-feeb9f30b6c3</value>
+			</AggregatesList>
+		</IClass>
+		<IDependency type="e">
+			<_id type="a">GUID 33e37030-6aff-4a71-8d10-dbe0e8c2f1c4</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Service_Repuesto</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::1:50:52</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::1:50:52</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Service_3.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::C_CAPA_NEGOCIOS::CN_REPUESTO::Service</_hsubsystem>
+					<_hname type="a">Service_Repuesto</_hname>
+					<_hid type="a">GUID 32068df0-240d-4eb2-8229-484d52e82401</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID ab1c8898-f9e2-4c98-bb77-4facf409cc79</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID 8db127a8-e1da-4cb4-913d-d55d6c8a13f2</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Service_Repuesto_0</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::2:16:33</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::2:16:33</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Service_3.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::C_CAPA_NEGOCIOS::CN_REPUESTO::Service</_hsubsystem>
+					<_hname type="a">Service_Repuesto</_hname>
+					<_hid type="a">GUID 32068df0-240d-4eb2-8229-484d52e82401</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID ab1c8898-f9e2-4c98-bb77-4facf409cc79</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID d5e3f0f7-7f08-45bb-82db-feeb9f30b6c3</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Service_Repuesto_1</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::2:25:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::2:25:4</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Service_3.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::C_CAPA_NEGOCIOS::CN_REPUESTO::Service</_hsubsystem>
+					<_hname type="a">Service_Repuesto</_hname>
+					<_hid type="a">GUID 32068df0-240d-4eb2-8229-484d52e82401</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID ab1c8898-f9e2-4c98-bb77-4facf409cc79</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

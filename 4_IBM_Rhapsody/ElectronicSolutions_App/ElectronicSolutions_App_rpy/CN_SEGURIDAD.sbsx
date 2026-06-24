@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 38ae70fc-14fa-4c69-b637-f2a77b09acb3</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">CN_SEGURIDAD</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::1:54:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::1:54:47</_modifiedTime>
+			<_lastID type="a">4</_lastID>
+			<weakCGTime type="a">3.2.2021::1:54:35</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:53:51</strongCGTime>
+			<_defaultComposite type="s">GUID dcbfc4af-34ca-479d-b49d-1f0d0ece519f</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">12.31.1969::19:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID aab89ca3-a07f-4b6b-bf0b-0796832d0d7d</value>
+				<value>GUID f3ada7f6-1adf-43e6-a3e7-a0e92867fea1</value>
+				<value>GUID 7ed5536c-833c-4710-a745-125738054491</value>
+				<value>GUID a31e3e40-58c0-4a68-ab11-b803332ec01e</value>
+				<value>GUID dcbfc4af-34ca-479d-b49d-1f0d0ece519f</value>
+			</AggregatesList>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Bean_4</fileName>
+			<_id type="a">GUID aab89ca3-a07f-4b6b-bf0b-0796832d0d7d</_id>
+			<_name type="a">Bean</_name>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">DAO_4</fileName>
+			<_id type="a">GUID f3ada7f6-1adf-43e6-a3e7-a0e92867fea1</_id>
+			<_name type="a">DAO</_name>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Service_4</fileName>
+			<_id type="a">GUID 7ed5536c-833c-4710-a745-125738054491</_id>
+			<_name type="a">Service</_name>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Interface_4</fileName>
+			<_id type="a">GUID a31e3e40-58c0-4a68-ab11-b803332ec01e</_id>
+			<_name type="a">Interface</_name>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID dcbfc4af-34ca-479d-b49d-1f0d0ece519f</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.31.1969::19:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

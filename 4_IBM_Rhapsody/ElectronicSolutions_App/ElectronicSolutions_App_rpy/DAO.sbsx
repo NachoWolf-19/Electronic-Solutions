@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 291c55b8-5d52-4f2d-a6dc-ea82b96d408f</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">DAO</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::1:37:53</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::1:54:47</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:37:53</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:37:16</strongCGTime>
+			<_defaultComposite type="s">GUID ff1fc8ff-f946-4ae3-a59b-6d7e9d057bdd</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">12.31.1969::19:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID ff1fc8ff-f946-4ae3-a59b-6d7e9d057bdd</value>
+				<value>GUID 32f22cab-9d0b-4f2b-a006-1c130d06514c</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID ff1fc8ff-f946-4ae3-a59b-6d7e9d057bdd</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.31.1969::19:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		<IClass type="e">
+			<_id type="a">GUID 32f22cab-9d0b-4f2b-a006-1c130d06514c</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">MySQL_DAO_ORDEN</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::1:37:53</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\ORDEN_SERVICIO.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::ORDEN_SERVICIO</_hsubsystem>
+					<_hname type="a">DCD DE CU GENERAR BOLETA DE ORDEN</_hname>
+					<_hid type="a">GUID a831f588-aa54-4afe-98cb-d2cbbcc3bcc1</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:37:53</_modifiedTime>
+			<_lastID type="a">6</_lastID>
+			<weakCGTime type="a">3.2.2021::1:37:53</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:37:53</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 895e1bd2-e6f9-4169-86da-75c2cd4be48e</value>
+				<value>GUID 460fc380-eb8d-4efb-8ff4-68a28e60b2f6</value>
+				<value>GUID f02acbd3-7353-4246-b847-a8ebea5ab672</value>
+				<value>GUID 2736ac8f-0c39-40b0-b4c7-e9dc153c1c54</value>
+				<value>GUID 9fe12d81-0a42-49e1-9a14-c48c2b6387b6</value>
+				<value>GUID 0841a0f9-a932-4dd6-9fb2-fffbbd0642e8</value>
+			</AggregatesList>
+		</IClass>
+		<IDependency type="e">
+			<_id type="a">GUID 895e1bd2-e6f9-4169-86da-75c2cd4be48e</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Conexion_BD</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">use</_hname>
+							<_hid type="a">GUID 6624c6dd-9bcf-4dbe-ad27-4fa6229f7ffc</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.1.2021::22:51:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::22:51:35</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\CN_Util.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::C_CAPA_NEGOCIOS::CN_Util</_hsubsystem>
+					<_hname type="a">Conexion_BD</_hname>
+					<_hid type="a">GUID f1b93606-7d0b-4dab-91eb-a2a29164011f</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 32f22cab-9d0b-4f2b-a006-1c130d06514c</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID 460fc380-eb8d-4efb-8ff4-68a28e60b2f6</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">ArrayList</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">use</_hname>
+							<_hid type="a">GUID 6624c6dd-9bcf-4dbe-ad27-4fa6229f7ffc</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.1.2021::22:51:31</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::22:51:31</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\CN_Util.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::C_CAPA_NEGOCIOS::CN_Util</_hsubsystem>
+					<_hname type="a">ArrayList</_hname>
+					<_hid type="a">GUID 7aea399d-6c64-4035-b1cf-95e4b6f10f31</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 32f22cab-9d0b-4f2b-a006-1c130d06514c</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID f02acbd3-7353-4246-b847-a8ebea5ab672</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Bean_Orden</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">use</_hname>
+							<_hid type="a">GUID 6624c6dd-9bcf-4dbe-ad27-4fa6229f7ffc</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.1.2021::22:51:28</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::22:51:28</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Bean.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::C_CAPA_NEGOCIOS::CN_ORDEN::Bean</_hsubsystem>
+					<_hname type="a">Bean_Orden</_hname>
+					<_hid type="a">GUID 992e7b60-4a1d-46dd-864e-9921f2373b82</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 32f22cab-9d0b-4f2b-a006-1c130d06514c</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID 2736ac8f-0c39-40b0-b4c7-e9dc153c1c54</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Interface_Orden</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">use</_hname>
+							<_hid type="a">GUID 6624c6dd-9bcf-4dbe-ad27-4fa6229f7ffc</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.1.2021::22:51:18</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::22:51:18</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Interface.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::C_CAPA_NEGOCIOS::CN_ORDEN::Interface</_hsubsystem>
+					<_hname type="a">Interface_Orden</_hname>
+					<_hid type="a">GUID dcf8ea0b-9587-4387-8adc-e47e5f432fc1</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 32f22cab-9d0b-4f2b-a006-1c130d06514c</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IPrimitiveOperation type="e">
+			<_id type="a">GUID 9fe12d81-0a42-49e1-9a14-c48c2b6387b6</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">CREATE</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::22:50:13</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::22:50:13</_modifiedTime>
+			<_virtual type="a">0</_virtual>
+			<Args type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Args>
+			<_returnType type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">void</_hname>
+					<_hid type="a">GUID c6b70728-b655-45a0-abb7-8ea5d3da94be</_hid>
+				</IHandle>
+			</_returnType>
+			<_abstract type="a">0</_abstract>
+			<_final type="a">0</_final>
+			<_concurrency type="a">Sequential</_concurrency>
+			<_protection type="a">iPublic</_protection>
+			<_static type="a">0</_static>
+			<_constant type="a">0</_constant>
+		</IPrimitiveOperation>
+		<IPrimitiveOperation type="e">
+			<_id type="a">GUID 0841a0f9-a932-4dd6-9fb2-fffbbd0642e8</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">SELECT</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::23:3:36</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::23:3:36</_modifiedTime>
+			<_virtual type="a">0</_virtual>
+			<Args type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">0</size>
+				</IRPYRawContainer>
+			</Args>
+			<_returnType type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IType</_hm2Class>
+					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+					<_hname type="a">void</_hname>
+					<_hid type="a">GUID c6b70728-b655-45a0-abb7-8ea5d3da94be</_hid>
+				</IHandle>
+			</_returnType>
+			<_abstract type="a">0</_abstract>
+			<_final type="a">0</_final>
+			<_concurrency type="a">Sequential</_concurrency>
+			<_protection type="a">iPublic</_protection>
+			<_static type="a">0</_static>
+			<_constant type="a">0</_constant>
+		</IPrimitiveOperation>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

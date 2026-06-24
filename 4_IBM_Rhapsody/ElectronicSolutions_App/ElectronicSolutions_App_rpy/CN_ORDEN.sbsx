@@ -11,25 +11,46 @@
 			<_id type="a">GUID 5a4d1003-f277-44a7-ac53-41a35e46ba24</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">CN_ORDEN</_name>
-			<_modifiedTimeWeak type="a">3.1.2021::20:5:53</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.1.2021::22:18:29</_modifiedTime>
-			<weakCGTime type="a">3.1.2021::20:5:53</weakCGTime>
-			<strongCGTime type="a">3.1.2021::20:5:53</strongCGTime>
+			<_modifiedTimeWeak type="a">3.2.2021::1:37:34</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::1:54:47</_modifiedTime>
+			<_lastID type="a">4</_lastID>
+			<weakCGTime type="a">3.2.2021::1:37:34</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:36:27</strongCGTime>
 			<_defaultComposite type="s">GUID 9e5dace4-8d41-439a-b590-1e12ec74998d</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">12.31.1969::19:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
+				<value>GUID 99541e5b-1f7b-477e-bade-9bce9de2ec3f</value>
+				<value>GUID 291c55b8-5d52-4f2d-a6dc-ea82b96d408f</value>
+				<value>GUID 64ee6f9d-5c88-4d41-b2d4-94c31f5e0675</value>
+				<value>GUID c3257cb5-0c95-4f2d-bc6c-00bdc82bcd53</value>
 				<value>GUID 9e5dace4-8d41-439a-b590-1e12ec74998d</value>
 			</AggregatesList>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Bean</fileName>
+			<_id type="a">GUID 99541e5b-1f7b-477e-bade-9bce9de2ec3f</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">DAO</fileName>
+			<_id type="a">GUID 291c55b8-5d52-4f2d-a6dc-ea82b96d408f</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Interface</fileName>
+			<_id type="a">GUID 64ee6f9d-5c88-4d41-b2d4-94c31f5e0675</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">Service</fileName>
+			<_id type="a">GUID c3257cb5-0c95-4f2d-bc6c-00bdc82bcd53</_id>
 		</ISubsystem>
 		<IClass type="e">
 			<_id type="a">GUID 9e5dace4-8d41-439a-b590-1e12ec74998d</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.31.1969::19:0:0</_modifiedTime>
-			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
-			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_modifiedTimeWeak type="a">3.2.2021::1:35:55</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:35:55</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:35:55</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>

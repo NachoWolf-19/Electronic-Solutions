@@ -44,8 +44,8 @@
 			</IPropertyContainer>
 			</_properties>
 			<_name type="a">ElectronicSolutions_App</_name>
-			<_modifiedTimeWeak type="a">3.1.2021::20:1:43</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.1.2021::22:18:29</_modifiedTime>
+			<_modifiedTimeWeak type="a">3.1.2021::21:35:49</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::1:54:47</_modifiedTime>
 			<_lastID type="a">23</_lastID>
 			<_UserColors type="w">
 				<IRPYRawContainer type="e">
@@ -127,9 +127,6 @@
 				<value>GUID 018fd50e-cdfb-4d1c-8d00-c6e75ba697d6</value>
 				<value>GUID 49fe88d2-bdea-48a3-ac08-58cc824b2f35</value>
 				<value>GUID 7e97bde9-a060-4e4f-bb69-e3b345acb7db</value>
-				<value>GUID a3fc9529-e51a-4ef2-aef9-2cef13b64208</value>
-				<value>GUID f1223e71-ab2f-42dc-ba13-72346baa4f3a</value>
-				<value>GUID 07af0eb2-9383-4b0e-97cf-731082db7152</value>
 				<value>GUID 41b8ba7c-dbb0-4192-81ea-535be276bd5f</value>
 				<value>GUID f15e2bf7-8353-4fd0-83fe-abf2fac96c98</value>
 				<value>GUID 1391187f-6c8f-46a7-ad8b-5f9a0164ee63</value>
@@ -173,18 +170,6 @@
 			<_id type="a">GUID 7e97bde9-a060-4e4f-bb69-e3b345acb7db</_id>
 			<_partOfTheModelKind type="a">referenceunit</_partOfTheModelKind>
 		</IProfile>
-		<ISubsystem type="e">
-			<fileName type="a">A_CAPA_PRESENTACION</fileName>
-			<_id type="a">GUID a3fc9529-e51a-4ef2-aef9-2cef13b64208</_id>
-		</ISubsystem>
-		<ISubsystem type="e">
-			<fileName type="a">B_CAPA_CONTROLADORA</fileName>
-			<_id type="a">GUID f1223e71-ab2f-42dc-ba13-72346baa4f3a</_id>
-		</ISubsystem>
-		<ISubsystem type="e">
-			<fileName type="a">C_CAPA_NEGOCIOS</fileName>
-			<_id type="a">GUID 07af0eb2-9383-4b0e-97cf-731082db7152</_id>
-		</ISubsystem>
 		<IStructureDiagram type="e">
 			<_id type="a">GUID 41b8ba7c-dbb0-4192-81ea-535be276bd5f</_id>
 			<_myState type="a">8192</_myState>

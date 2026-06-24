@@ -11,15 +11,16 @@
 			<_id type="a">GUID 363c2372-f474-47f1-aa2d-de9ec28601e7</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">CC_ORDEN</_name>
-			<_modifiedTimeWeak type="a">3.1.2021::20:5:41</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.1.2021::22:18:29</_modifiedTime>
-			<weakCGTime type="a">3.1.2021::20:5:41</weakCGTime>
+			<_modifiedTimeWeak type="a">3.2.2021::1:32:57</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::1:54:47</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:32:57</weakCGTime>
 			<strongCGTime type="a">3.1.2021::20:5:41</strongCGTime>
 			<_defaultComposite type="s">GUID 49af44a2-ee9c-4cf1-89cc-6b51eb51e7d3</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">12.31.1969::19:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID 49af44a2-ee9c-4cf1-89cc-6b51eb51e7d3</value>
+				<value>GUID 83acdecb-bb1a-43db-a17b-5c108c1a7a60</value>
 			</AggregatesList>
 		</ISubsystem>
 		<IClass type="e">
@@ -27,7 +28,7 @@
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.31.1969::19:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">
@@ -36,6 +37,138 @@
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
 		</IClass>
+		<IClass type="e">
+			<_id type="a">GUID 83acdecb-bb1a-43db-a17b-5c108c1a7a60</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Orden_Servlet</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">HttpServlet</_hname>
+							<_hid type="a">GUID 3370cd12-7f9f-4b57-bbbe-7f1d438dfefe</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:32:57</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\ORDEN_SERVICIO.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::ORDEN_SERVICIO</_hsubsystem>
+					<_hname type="a">DCD DE CU LISTAR ORDEN</_hname>
+					<_hid type="a">GUID 3578ee99-333e-4291-9af2-991ba70a2896</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:32:57</_modifiedTime>
+			<_lastID type="a">4</_lastID>
+			<weakCGTime type="a">3.2.2021::1:32:57</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:32:57</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 9ea2923b-2f79-4414-9ebd-01052ef4d8eb</value>
+				<value>GUID 53e28f5d-4864-4656-bbb7-5647742558ab</value>
+				<value>GUID ab0c6ebc-f85a-432b-a26a-4319cf2e32af</value>
+				<value>GUID ad0ccda9-9935-4e09-8a38-ccefc787d412</value>
+			</AggregatesList>
+		</IClass>
+		<IDependency type="e">
+			<_id type="a">GUID 9ea2923b-2f79-4414-9ebd-01052ef4d8eb</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Service_Orden</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::23:3:23</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::23:3:23</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Service.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::C_CAPA_NEGOCIOS::CN_ORDEN::Service</_hsubsystem>
+					<_hname type="a">Service_Orden</_hname>
+					<_hid type="a">GUID 687e80a1-900b-4e2a-a1d4-630ca5c0dd45</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 83acdecb-bb1a-43db-a17b-5c108c1a7a60</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID 53e28f5d-4864-4656-bbb7-5647742558ab</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Service_Orden_0</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::23:26:15</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::23:26:15</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Service.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::C_CAPA_NEGOCIOS::CN_ORDEN::Service</_hsubsystem>
+					<_hname type="a">Service_Orden</_hname>
+					<_hid type="a">GUID 687e80a1-900b-4e2a-a1d4-630ca5c0dd45</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 83acdecb-bb1a-43db-a17b-5c108c1a7a60</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID ab0c6ebc-f85a-432b-a26a-4319cf2e32af</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Service_Orden_1</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::23:31:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::23:31:27</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Service.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::C_CAPA_NEGOCIOS::CN_ORDEN::Service</_hsubsystem>
+					<_hname type="a">Service_Orden</_hname>
+					<_hid type="a">GUID 687e80a1-900b-4e2a-a1d4-630ca5c0dd45</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 83acdecb-bb1a-43db-a17b-5c108c1a7a60</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID ad0ccda9-9935-4e09-8a38-ccefc787d412</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Service_Orden_2</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::23:38:28</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::23:38:28</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Service.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::C_CAPA_NEGOCIOS::CN_ORDEN::Service</_hsubsystem>
+					<_hname type="a">Service_Orden</_hname>
+					<_hid type="a">GUID 687e80a1-900b-4e2a-a1d4-630ca5c0dd45</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 83acdecb-bb1a-43db-a17b-5c108c1a7a60</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
 		
 	</RHAPSODY-MODEL>
 	<OslcLinks type="c">

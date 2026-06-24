@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID a0f641cc-6efe-4a45-8edf-f3e83ed842cf</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Service</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::1:52:8</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::1:54:47</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:52:8</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:51:28</strongCGTime>
+			<_defaultComposite type="s">GUID c2ce3c32-95bc-45c4-8866-5be475c91b55</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">12.31.1969::19:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID c2ce3c32-95bc-45c4-8866-5be475c91b55</value>
+				<value>GUID 32068df0-240d-4eb2-8229-484d52e82401</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID c2ce3c32-95bc-45c4-8866-5be475c91b55</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.31.1969::19:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		<IClass type="e">
+			<_id type="a">GUID 32068df0-240d-4eb2-8229-484d52e82401</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Service_Repuesto</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::1:52:8</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\REPUESTOS_1.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::REPUESTO</_hsubsystem>
+					<_hname type="a">DCD DE CU LISTAR REPUESTOS</_hname>
+					<_hid type="a">GUID c99bfa88-f848-4e68-8123-df04f3a25548</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:52:8</_modifiedTime>
+			<_lastID type="a">2</_lastID>
+			<weakCGTime type="a">3.2.2021::2:16:47</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:52:8</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 193c6988-3a9e-4e58-99d9-571503357f08</value>
+				<value>GUID 22041228-b555-4e08-9467-4a8dca52c46e</value>
+			</AggregatesList>
+		</IClass>
+		<IDependency type="e">
+			<_id type="a">GUID 193c6988-3a9e-4e58-99d9-571503357f08</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">DAO_Factory</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">use</_hname>
+							<_hid type="a">GUID 6624c6dd-9bcf-4dbe-ad27-4fa6229f7ffc</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::2:16:43</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::2:16:43</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\REPUESTOS_1.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::REPUESTO</_hsubsystem>
+					<_hname type="a">DAO_Factory</_hname>
+					<_hid type="a">GUID cb0f7786-f3a6-4e2a-b3cb-906dc166274f</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 32068df0-240d-4eb2-8229-484d52e82401</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IDependency type="e">
+			<_id type="a">GUID 22041228-b555-4e08-9467-4a8dca52c46e</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Interface_repuesto</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">use</_hname>
+							<_hid type="a">GUID 6624c6dd-9bcf-4dbe-ad27-4fa6229f7ffc</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::2:16:47</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::2:16:47</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Interface_3.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::C_CAPA_NEGOCIOS::CN_REPUESTO::Interface</_hsubsystem>
+					<_hname type="a">Interface_repuesto</_hname>
+					<_hid type="a">GUID 56d25dec-19b8-4ee5-bda2-2f50ad5b6cc9</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 32068df0-240d-4eb2-8229-484d52e82401</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

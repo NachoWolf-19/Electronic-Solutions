@@ -11,7 +11,7 @@
 			<_id type="a">GUID b25d16a9-8a30-4313-8b37-64fb448fc58f</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">MCU</_name>
-			<_modifiedTimeWeak type="a">3.1.2021::7:14:51</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">3.2.2021::0:1:56</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -19,9 +19,9 @@
 					<_hid type="a">GUID f15e2bf7-8353-4fd0-83fe-abf2fac96c98</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">3.2.2021::8:17:56</_modifiedTime>
+			<_modifiedTime type="a">3.2.2021::1:54:45</_modifiedTime>
 			<_lastID type="a">51</_lastID>
-			<weakCGTime type="a">3.1.2021::7:14:51</weakCGTime>
+			<weakCGTime type="a">3.2.2021::0:1:56</weakCGTime>
 			<strongCGTime type="a">3.2.2021::0:3:36</strongCGTime>
 			<_defaultComposite type="s">GUID f598d25f-bad3-4d82-868e-776117702cbc</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -7467,7 +7467,7 @@
 			<_id type="a">GUID 5f15080b-70b4-4e29-bc7a-506162abdd88</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Administrador</_name>
-			<_modifiedTimeWeak type="a">3.2.2021::7:40:44</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">3.2.2021::0:1:56</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -7477,7 +7477,7 @@
 					<_hid type="a">GUID a77f2731-760f-419c-90d4-52e19bb5f679</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">3.2.2021::7:40:44</_modifiedTime>
+			<_modifiedTime type="a">3.2.2021::0:1:56</_modifiedTime>
 			<weakCGTime type="a">3.2.2021::7:40:44</weakCGTime>
 			<strongCGTime type="a">3.1.2021::6:7:12</strongCGTime>
 			<_itsStateChart type="r">
@@ -7590,16 +7590,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 275e37ca-60ce-4981-b35b-bcc77909a8e6</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsCI_Reportes</_name>
-			<_modifiedTimeWeak type="a">3.2.2021::6:12:13</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.2.2021::6:12:13</_modifiedTime>
+			<_name type="a">itsCI_GenerarReportes</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::0:1:56</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::0:1:56</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
 					<_hfilename type="a">.\REPORTES.sbsx</_hfilename>
 					<_hsubsystem type="a">MA::REPORTES</_hsubsystem>
-					<_hname type="a">CI_Reportes</_hname>
+					<_hname type="a">CI_GenerarReportes</_hname>
 					<_hid type="a">GUID 4b242b1e-2683-48d0-875d-fe798ac16cb3</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -7608,7 +7608,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\REPORTES.sbsx</_hfilename>
 					<_hsubsystem type="a">MA::REPORTES</_hsubsystem>
-					<_hclass type="a">CI_Reportes</_hclass>
+					<_hclass type="a">CI_GenerarReportes</_hclass>
 					<_hname type="a">itsAdministrador</_hname>
 					<_hid type="a">GUID 4a720ca1-58aa-4696-8dce-159999d81f78</_hid>
 				</IHandle>
@@ -7649,7 +7649,7 @@
 			<_id type="a">GUID 217b64d6-53be-46f1-afe3-7673469cd61f</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Recepcionista</_name>
-			<_modifiedTimeWeak type="a">3.1.2021::7:12:19</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">3.2.2021::7:39:11</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -8021,7 +8021,7 @@
 			<_id type="a">GUID c97dcc09-c5a9-46ce-8c47-dbd63be07835</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Usuario</_name>
-			<_modifiedTimeWeak type="a">3.1.2021::7:14:15</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">3.2.2021::7:28:39</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>

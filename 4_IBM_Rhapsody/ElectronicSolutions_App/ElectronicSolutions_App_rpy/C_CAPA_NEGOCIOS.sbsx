@@ -25,7 +25,7 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">3.1.2021::20:5:49</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">3.2.2021::1:53:46</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -35,15 +35,21 @@
 					<_hid type="a">GUID af54f741-a85d-4060-bea3-0ea9ebb4055c</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">3.1.2021::22:18:29</_modifiedTime>
-			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">3.1.2021::20:5:49</weakCGTime>
-			<strongCGTime type="a">3.1.2021::20:3:3</strongCGTime>
+			<_modifiedTime type="a">3.2.2021::1:54:47</_modifiedTime>
+			<_lastID type="a">8</_lastID>
+			<weakCGTime type="a">3.2.2021::1:53:46</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:36:27</strongCGTime>
 			<_defaultComposite type="s">GUID e9dee37d-65e4-444d-8839-149f6a28d618</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">12.31.1969::19:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">3.2.2021::1:51:9</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID 5a4d1003-f277-44a7-ac53-41a35e46ba24</value>
+				<value>GUID 0bccdc6d-09cb-490d-9e9e-46968e598863</value>
+				<value>GUID 85646ac7-c44d-44b6-bd1e-ed6ce0f80841</value>
+				<value>GUID 14874a3f-516a-4312-b7ee-c0cf8e48e2c8</value>
+				<value>GUID 0735bbd5-335a-421b-98df-c926bcdba5e7</value>
+				<value>GUID e533fbdc-d4a2-4000-afa8-aa9b12684b23</value>
+				<value>GUID 38ae70fc-14fa-4c69-b637-f2a77b09acb3</value>
 				<value>GUID e9dee37d-65e4-444d-8839-149f6a28d618</value>
 			</AggregatesList>
 		</ISubsystem>
@@ -51,14 +57,38 @@
 			<fileName type="a">CN_ORDEN</fileName>
 			<_id type="a">GUID 5a4d1003-f277-44a7-ac53-41a35e46ba24</_id>
 		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">CN_AdminDAO</fileName>
+			<_id type="a">GUID 0bccdc6d-09cb-490d-9e9e-46968e598863</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">CN_Util</fileName>
+			<_id type="a">GUID 85646ac7-c44d-44b6-bd1e-ed6ce0f80841</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">CN_CLIENTE</fileName>
+			<_id type="a">GUID 14874a3f-516a-4312-b7ee-c0cf8e48e2c8</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">CN_REPORTE</fileName>
+			<_id type="a">GUID 0735bbd5-335a-421b-98df-c926bcdba5e7</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">CN_REPUESTO</fileName>
+			<_id type="a">GUID e533fbdc-d4a2-4000-afa8-aa9b12684b23</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">CN_SEGURIDAD</fileName>
+			<_id type="a">GUID 38ae70fc-14fa-4c69-b637-f2a77b09acb3</_id>
+		</ISubsystem>
 		<IClass type="e">
 			<_id type="a">GUID e9dee37d-65e4-444d-8839-149f6a28d618</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.31.1969::19:0:0</_modifiedTime>
-			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
-			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_modifiedTimeWeak type="a">3.2.2021::1:36:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:36:27</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:36:27</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>

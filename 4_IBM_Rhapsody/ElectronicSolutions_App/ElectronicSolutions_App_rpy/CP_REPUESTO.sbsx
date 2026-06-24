@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 2dd210e6-0c9b-4b94-93e7-376a70223637</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">CP_REPUESTO</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::1:49:45</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::1:54:47</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:49:45</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:49:17</strongCGTime>
+			<_defaultComposite type="s">GUID 9ca62069-5d8b-4800-9841-7c9410394190</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">12.31.1969::19:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID 9ca62069-5d8b-4800-9841-7c9410394190</value>
+				<value>GUID 81933b99-779b-4f26-b5ba-48ee64e06799</value>
+				<value>GUID 39f98cdf-e806-4ea0-b6ed-5644641a89d0</value>
+				<value>GUID 20e843a5-4817-4a4a-b7b2-99e715a28fc5</value>
+				<value>GUID cfd1702d-2914-4800-b1b3-417131787b04</value>
+				<value>GUID b227cc30-d312-414b-ae43-0408574d75aa</value>
+				<value>GUID 00540ba4-2e94-4474-bac1-709349826bbe</value>
+				<value>GUID 1d56e229-cced-408a-a4f2-c3bd40080488</value>
+				<value>GUID e385ed2b-bc01-43aa-82e1-a02267340022</value>
+				<value>GUID 8c73ce93-6775-4665-9330-01dec71f2203</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID 9ca62069-5d8b-4800-9841-7c9410394190</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.31.1969::19:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		<IClass type="e">
+			<_id type="a">GUID 81933b99-779b-4f26-b5ba-48ee64e06799</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ListarRepuesto_Jsp_Client</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">ClientPage</_hname>
+							<_hid type="a">GUID 7a2582ed-2929-49c6-bc9c-8d4034aeacd0</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:49:44</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\REPUESTOS_1.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::REPUESTO</_hsubsystem>
+					<_hname type="a">DCD DE CU LISTAR REPUESTOS</_hname>
+					<_hid type="a">GUID c99bfa88-f848-4e68-8123-df04f3a25548</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:49:44</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:49:44</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:49:44</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 8a8ebf24-bd81-4fbc-a41f-fcb07268576b</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 8a8ebf24-bd81-4fbc-a41f-fcb07268576b</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsListarRepuesto_Form</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::1:39:38</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::1:39:38</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID cfd1702d-2914-4800-b1b3-417131787b04</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID 049dd7f3-675a-4339-bc69-73b4a0c53869</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IClass type="e">
+			<_id type="a">GUID 39f98cdf-e806-4ea0-b6ed-5644641a89d0</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">RegistrarRepuesto_Jsp_Client</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">ClientPage</_hname>
+							<_hid type="a">GUID 7a2582ed-2929-49c6-bc9c-8d4034aeacd0</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:49:44</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\REPUESTOS_1.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::REPUESTO</_hsubsystem>
+					<_hname type="a">DCD DE CU REGISTRAR REPUESTOS</_hname>
+					<_hid type="a">GUID 65009b34-914c-437d-94da-05bd4b9003ca</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:49:44</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::2:14:49</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:49:44</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 7c524d7b-9724-4503-a81c-6f357cd5cf7b</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 7c524d7b-9724-4503-a81c-6f357cd5cf7b</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsRegistrarRepuesto_Form</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::2:14:49</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::2:14:49</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID b227cc30-d312-414b-ae43-0408574d75aa</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID c1d81a01-a43d-4bef-aa2c-c30ca498fdea</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IClass type="e">
+			<_id type="a">GUID 20e843a5-4817-4a4a-b7b2-99e715a28fc5</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">VerificarRepuesto_Jsp_Client</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">ClientPage</_hname>
+							<_hid type="a">GUID 7a2582ed-2929-49c6-bc9c-8d4034aeacd0</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:49:44</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\REPUESTOS_1.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::REPUESTO</_hsubsystem>
+					<_hname type="a">DCD DE CU VERIFICAR REPUESTOS</_hname>
+					<_hid type="a">GUID e156aaad-e248-437e-9a4d-0e5aa9ca2f82</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:49:44</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::2:24:1</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:49:44</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID b5c6540f-5885-4d47-9416-097d1dbf1bed</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID b5c6540f-5885-4d47-9416-097d1dbf1bed</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsVerificarRepuesto_Form</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::2:24:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::2:24:1</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 00540ba4-2e94-4474-bac1-709349826bbe</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID 01c02226-fea5-4593-9847-d8c598f52f74</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IClass type="e">
+			<_id type="a">GUID cfd1702d-2914-4800-b1b3-417131787b04</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ListarRepuesto_Form</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">HTMLForm</_hname>
+							<_hid type="a">GUID 6a60ba25-1739-4b6c-834b-c4c45faa7d27</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:49:44</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\REPUESTOS_1.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::REPUESTO</_hsubsystem>
+					<_hname type="a">DCD DE CU LISTAR REPUESTOS</_hname>
+					<_hid type="a">GUID c99bfa88-f848-4e68-8123-df04f3a25548</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:49:44</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::2:22:7</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:49:44</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 049dd7f3-675a-4339-bc69-73b4a0c53869</value>
+				<value>GUID 4b489edb-16d6-49d8-9d95-ec9e65ca2be6</value>
+				<value>GUID 8039c415-515b-4ff3-ac78-28aab32d81d3</value>
+				<value>GUID 6cd68002-926a-4bf5-ba5e-4d2df2c94263</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 049dd7f3-675a-4339-bc69-73b4a0c53869</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsListarRepuesto_Jsp_Client</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::1:39:38</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::1:39:38</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 81933b99-779b-4f26-b5ba-48ee64e06799</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID 8a8ebf24-bd81-4fbc-a41f-fcb07268576b</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Aggreg</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 4b489edb-16d6-49d8-9d95-ec9e65ca2be6</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">link</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::1:48:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::1:48:50</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\CC_REPUESTO.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::B_CAPA_CONTROLADORA::CC_REPUESTO</_hsubsystem>
+					<_hname type="a">Repuesto_Servlet</_hname>
+					<_hid type="a">GUID ab1c8898-f9e2-4c98-bb77-4facf409cc79</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 8039c415-515b-4ff3-ac78-28aab32d81d3</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">linkk</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::2:15:23</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::2:15:23</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\CC_REPUESTO.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::B_CAPA_CONTROLADORA::CC_REPUESTO</_hsubsystem>
+					<_hname type="a">Repuesto_Servlet</_hname>
+					<_hid type="a">GUID ab1c8898-f9e2-4c98-bb77-4facf409cc79</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 6cd68002-926a-4bf5-ba5e-4d2df2c94263</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">liink</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::2:22:7</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::2:22:7</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\CC_REPUESTO.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::B_CAPA_CONTROLADORA::CC_REPUESTO</_hsubsystem>
+					<_hname type="a">Repuesto_Servlet</_hname>
+					<_hid type="a">GUID ab1c8898-f9e2-4c98-bb77-4facf409cc79</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IClass type="e">
+			<_id type="a">GUID b227cc30-d312-414b-ae43-0408574d75aa</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">RegistrarRepuesto_Form</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">HTMLForm</_hname>
+							<_hid type="a">GUID 6a60ba25-1739-4b6c-834b-c4c45faa7d27</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:49:44</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\REPUESTOS_1.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::REPUESTO</_hsubsystem>
+					<_hname type="a">DCD DE CU REGISTRAR REPUESTOS</_hname>
+					<_hid type="a">GUID 65009b34-914c-437d-94da-05bd4b9003ca</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:49:44</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::2:15:41</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:49:44</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID c1d81a01-a43d-4bef-aa2c-c30ca498fdea</value>
+				<value>GUID e4346f25-ed36-4c7f-b48f-280fd77c3ebd</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID c1d81a01-a43d-4bef-aa2c-c30ca498fdea</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsRegistrarRepuesto_Jsp_Client</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::2:14:49</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::2:14:49</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 39f98cdf-e806-4ea0-b6ed-5644641a89d0</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID 7c524d7b-9724-4503-a81c-6f357cd5cf7b</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Aggreg</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID e4346f25-ed36-4c7f-b48f-280fd77c3ebd</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsRepuesto_Servlet</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::2:15:41</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::2:15:41</_modifiedTime>
+			<_multiplicity type="a">link</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\CC_REPUESTO.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::B_CAPA_CONTROLADORA::CC_REPUESTO</_hsubsystem>
+					<_hname type="a">Repuesto_Servlet</_hname>
+					<_hid type="a">GUID ab1c8898-f9e2-4c98-bb77-4facf409cc79</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IClass type="e">
+			<_id type="a">GUID 00540ba4-2e94-4474-bac1-709349826bbe</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">VerificarRepuesto_Form</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">HTMLForm</_hname>
+							<_hid type="a">GUID 6a60ba25-1739-4b6c-834b-c4c45faa7d27</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:49:44</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\REPUESTOS_1.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::REPUESTO</_hsubsystem>
+					<_hname type="a">DCD DE CU VERIFICAR REPUESTOS</_hname>
+					<_hid type="a">GUID e156aaad-e248-437e-9a4d-0e5aa9ca2f82</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:49:44</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::2:24:21</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:49:44</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 01c02226-fea5-4593-9847-d8c598f52f74</value>
+				<value>GUID 9e593175-fa9a-4a03-b178-ec4d239bad3c</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 01c02226-fea5-4593-9847-d8c598f52f74</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsVerificarRepuesto_Jsp_Client</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::2:24:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::2:24:1</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 20e843a5-4817-4a4a-b7b2-99e715a28fc5</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID b5c6540f-5885-4d47-9416-097d1dbf1bed</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Aggreg</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 9e593175-fa9a-4a03-b178-ec4d239bad3c</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">link</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::2:24:21</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::2:24:21</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\CC_REPUESTO.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::B_CAPA_CONTROLADORA::CC_REPUESTO</_hsubsystem>
+					<_hname type="a">Repuesto_Servlet</_hname>
+					<_hid type="a">GUID ab1c8898-f9e2-4c98-bb77-4facf409cc79</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IClass type="e">
+			<_id type="a">GUID 1d56e229-cced-408a-a4f2-c3bd40080488</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ListarRepuesto_Jsp</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">ServerPage</_hname>
+							<_hid type="a">GUID ecc20ed6-06d5-4707-987f-4036f890fd8c</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:49:44</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\REPUESTOS_1.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::REPUESTO</_hsubsystem>
+					<_hname type="a">DCD DE CU LISTAR REPUESTOS</_hname>
+					<_hid type="a">GUID c99bfa88-f848-4e68-8123-df04f3a25548</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:49:44</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:49:44</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:49:44</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID b0e225fd-c375-498c-a66a-7d241fbf8cc7</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID b0e225fd-c375-498c-a66a-7d241fbf8cc7</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">build</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::1:39:24</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::1:39:24</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 81933b99-779b-4f26-b5ba-48ee64e06799</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IClass type="e">
+			<_id type="a">GUID e385ed2b-bc01-43aa-82e1-a02267340022</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">RegistrarRepuesto_Jsp</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">ServerPage</_hname>
+							<_hid type="a">GUID ecc20ed6-06d5-4707-987f-4036f890fd8c</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:49:45</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\REPUESTOS_1.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::REPUESTO</_hsubsystem>
+					<_hname type="a">DCD DE CU REGISTRAR REPUESTOS</_hname>
+					<_hid type="a">GUID 65009b34-914c-437d-94da-05bd4b9003ca</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:49:45</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::2:14:37</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:49:45</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 57e36c93-6661-4ab9-97a9-99316f03c138</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 57e36c93-6661-4ab9-97a9-99316f03c138</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">build</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::2:14:37</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::2:14:37</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 39f98cdf-e806-4ea0-b6ed-5644641a89d0</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IClass type="e">
+			<_id type="a">GUID 8c73ce93-6775-4665-9330-01dec71f2203</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">VerificarRepuesto_Jsp</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">ServerPage</_hname>
+							<_hid type="a">GUID ecc20ed6-06d5-4707-987f-4036f890fd8c</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:49:45</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\REPUESTOS_1.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::REPUESTO</_hsubsystem>
+					<_hname type="a">DCD DE CU VERIFICAR REPUESTOS</_hname>
+					<_hid type="a">GUID e156aaad-e248-437e-9a4d-0e5aa9ca2f82</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:49:45</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::2:23:51</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:49:45</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 650d4746-43c0-41de-a414-48058928bfc1</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 650d4746-43c0-41de-a414-48058928bfc1</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">build</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::2:23:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::2:23:51</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 20e843a5-4817-4a4a-b7b2-99e715a28fc5</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

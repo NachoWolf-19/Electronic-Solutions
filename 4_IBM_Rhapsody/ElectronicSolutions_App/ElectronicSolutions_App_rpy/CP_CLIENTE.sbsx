@@ -1,0 +1,1069 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 75e5f886-dec8-4c1c-bd1a-9b1049be2e59</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">CP_CLIENTE</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::1:40:39</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::1:54:47</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:40:39</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:39:53</strongCGTime>
+			<_defaultComposite type="s">GUID 5a85927a-df85-49df-8139-91c0be5e9f8d</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">12.31.1969::19:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID 5a85927a-df85-49df-8139-91c0be5e9f8d</value>
+				<value>GUID 0ad0a36c-a346-4c98-9b99-170c836cc187</value>
+				<value>GUID 63f1153e-15ab-4b3a-aea4-050d5fbd58f4</value>
+				<value>GUID 9d6ccb7d-d5a8-4322-bea1-6284f965530d</value>
+				<value>GUID 7f45c82e-c715-4c69-b0ed-6a3fed8b914f</value>
+				<value>GUID 16f311ae-e2bc-4174-9114-bb7f9cff0445</value>
+				<value>GUID f88087a0-f129-451c-bfa5-ec293eafc8dd</value>
+				<value>GUID 0cecd1c2-a8ac-4176-9fe8-573445b13c92</value>
+				<value>GUID a59de4a9-264f-4a0b-add9-e013ba0f7680</value>
+				<value>GUID d1e6c7e0-0d79-45aa-88b5-e2f22553daf3</value>
+				<value>GUID 8a14ecdf-d337-437e-85b5-8c9df9611c71</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID 5a85927a-df85-49df-8139-91c0be5e9f8d</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.31.1969::19:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		<IClass type="e">
+			<_id type="a">GUID 0ad0a36c-a346-4c98-9b99-170c836cc187</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ListarCliente_Jsp_Client</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">ClientPage</_hname>
+							<_hid type="a">GUID 7a2582ed-2929-49c6-bc9c-8d4034aeacd0</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:40:39</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::CLIENTE</_hsubsystem>
+					<_hname type="a">DCD DE CU REGISTRAR CLIENTES</_hname>
+					<_hid type="a">GUID 4ba64ea8-aef0-4c1e-992a-6cb5cd18d994</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:40:39</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:40:39</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:40:39</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 37888bfc-479b-41d2-bb0f-74303069c96c</value>
+				<value>GUID 1da0f2fa-d259-43f8-bfca-70b04887c4e9</value>
+				<value>GUID 8ed6450c-43a7-456e-88fc-22000d7a1180</value>
+				<value>GUID 347d4d43-220e-408b-9259-48792502025e</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 37888bfc-479b-41d2-bb0f-74303069c96c</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsRegistrarCliente_Form</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::21:41:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::21:41:50</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID f88087a0-f129-451c-bfa5-ec293eafc8dd</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 1da0f2fa-d259-43f8-bfca-70b04887c4e9</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsRegistrarCliente_Form_1</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::21:45:31</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::21:45:31</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID f88087a0-f129-451c-bfa5-ec293eafc8dd</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID 16d4889d-1a31-4366-94ef-8a6d22b6667e</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 8ed6450c-43a7-456e-88fc-22000d7a1180</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">link</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::21:44:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::21:44:27</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\CC_CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::B_CAPA_CONTROLADORA::CC_CLIENTE</_hsubsystem>
+					<_hname type="a">Servlet_Cliente</_hname>
+					<_hid type="a">GUID 61c49bff-1ad5-42f0-a47a-29444879a1d1</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 347d4d43-220e-408b-9259-48792502025e</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsListarCliente_Form</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::22:18:37</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::22:18:37</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 16f311ae-e2bc-4174-9114-bb7f9cff0445</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID c5b09905-53a1-48cb-898d-70bc9aeab56a</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IClass type="e">
+			<_id type="a">GUID 63f1153e-15ab-4b3a-aea4-050d5fbd58f4</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ListaCliente_Jsp</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">ClientPage</_hname>
+							<_hid type="a">GUID 7a2582ed-2929-49c6-bc9c-8d4034aeacd0</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:40:39</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::CLIENTE</_hsubsystem>
+					<_hname type="a">DCD DE CU LISTAR CLIENTES</_hname>
+					<_hid type="a">GUID e7721499-0cb9-4f41-a64e-4e4d3bbd0ddb</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:40:39</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:40:39</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:40:39</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 7b481a38-fdee-4998-a7c2-e9cbc09f5668</value>
+				<value>GUID cc8556d3-9a6f-4ad6-b616-82d2ea89ca8f</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 7b481a38-fdee-4998-a7c2-e9cbc09f5668</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">link</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::21:19:14</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::21:19:14</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::CLIENTE</_hsubsystem>
+					<_hname type="a">class_43</_hname>
+					<_hid type="a">GUID 7dea2336-4eed-430d-b38e-951c3ba7ef1e</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID cc8556d3-9a6f-4ad6-b616-82d2ea89ca8f</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsListarCliente_Form</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::22:15:31</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::22:15:31</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 16f311ae-e2bc-4174-9114-bb7f9cff0445</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID 38cde6b3-29ad-4bfc-9dd1-f0b8779d8228</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IClass type="e">
+			<_id type="a">GUID 9d6ccb7d-d5a8-4322-bea1-6284f965530d</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">VerificarCliente_Jsp_Client</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">ClientPage</_hname>
+							<_hid type="a">GUID 7a2582ed-2929-49c6-bc9c-8d4034aeacd0</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:40:39</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::CLIENTE</_hsubsystem>
+					<_hname type="a">DCD DE CU VERIFICAR CLIENTE</_hname>
+					<_hid type="a">GUID 231139dc-9950-418b-938c-10123e47317f</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:40:39</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:40:39</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:40:39</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID ad9a3e3a-37fc-4baa-84e8-72c1fdd5f8e4</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID ad9a3e3a-37fc-4baa-84e8-72c1fdd5f8e4</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsVerificarCliente_Form</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::22:21:22</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::22:21:22</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 0cecd1c2-a8ac-4176-9fe8-573445b13c92</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID a81880e2-e0f3-4419-919e-fa88d503c1a2</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IClass type="e">
+			<_id type="a">GUID 7f45c82e-c715-4c69-b0ed-6a3fed8b914f</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">RegistrarCliente_Jsp_Client</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">ClientPage</_hname>
+							<_hid type="a">GUID 7a2582ed-2929-49c6-bc9c-8d4034aeacd0</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:40:39</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::CLIENTE</_hsubsystem>
+					<_hname type="a">DCD DE CU REGISTRAR CLIENTES</_hname>
+					<_hid type="a">GUID 4ba64ea8-aef0-4c1e-992a-6cb5cd18d994</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:40:39</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:40:39</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:40:39</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID a2dd631e-2c2f-4a47-ad3a-237b80d57e9b</value>
+				<value>GUID a6253a1e-3425-47a6-9e70-54a78f1710d7</value>
+				<value>GUID 13707a77-6ecd-486f-907f-dd98c658c08d</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID a2dd631e-2c2f-4a47-ad3a-237b80d57e9b</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">link</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::21:47:13</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::21:47:13</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::CLIENTE</_hsubsystem>
+					<_hname type="a">class_58</_hname>
+					<_hid type="a">GUID 149cbb97-b65d-480d-8b4a-aa5c8442e2e7</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID a6253a1e-3425-47a6-9e70-54a78f1710d7</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsClass_58</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::21:47:29</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::21:47:29</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::CLIENTE</_hsubsystem>
+					<_hname type="a">class_58</_hname>
+					<_hid type="a">GUID 149cbb97-b65d-480d-8b4a-aa5c8442e2e7</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::CLIENTE</_hsubsystem>
+					<_hclass type="a">class_58</_hclass>
+					<_hname type="a">itsRegistrarCliente_Jsp_Client</_hname>
+					<_hid type="a">GUID 0a6fdeed-ed4f-4437-9ce0-754182d54c85</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 13707a77-6ecd-486f-907f-dd98c658c08d</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsRegistrarCliente_Form</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::21:48:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::21:48:4</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID f88087a0-f129-451c-bfa5-ec293eafc8dd</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID 6ebc2788-cf6e-4e46-83ca-323a278fed17</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IClass type="e">
+			<_id type="a">GUID 16f311ae-e2bc-4174-9114-bb7f9cff0445</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ListarCliente_Form</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">HTMLForm</_hname>
+							<_hid type="a">GUID 6a60ba25-1739-4b6c-834b-c4c45faa7d27</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:40:39</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::CLIENTE</_hsubsystem>
+					<_hname type="a">DCD DE CU VERIFICAR CLIENTE</_hname>
+					<_hid type="a">GUID 231139dc-9950-418b-938c-10123e47317f</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:40:39</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:40:39</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:40:39</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 38cde6b3-29ad-4bfc-9dd1-f0b8779d8228</value>
+				<value>GUID 1bf8e114-4e40-4001-a98e-59f0632af87c</value>
+				<value>GUID a13af23b-eed1-4dcd-9cc3-70a7e6b7951e</value>
+				<value>GUID c5b09905-53a1-48cb-898d-70bc9aeab56a</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 38cde6b3-29ad-4bfc-9dd1-f0b8779d8228</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsListaCliente_Jsp</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::22:15:31</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::22:15:31</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 63f1153e-15ab-4b3a-aea4-050d5fbd58f4</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID cc8556d3-9a6f-4ad6-b616-82d2ea89ca8f</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Aggreg</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 1bf8e114-4e40-4001-a98e-59f0632af87c</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsClass_68</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::22:15:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::22:15:50</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::CLIENTE</_hsubsystem>
+					<_hname type="a">class_68</_hname>
+					<_hid type="a">GUID dce8e2c4-1d79-4138-a7f8-da1b98cbdc2b</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID a13af23b-eed1-4dcd-9cc3-70a7e6b7951e</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">link</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::22:18:13</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::22:18:13</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\CC_CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::B_CAPA_CONTROLADORA::CC_CLIENTE</_hsubsystem>
+					<_hname type="a">Cliente_Servlet</_hname>
+					<_hid type="a">GUID b498996b-4b95-4b03-b3da-9544e797078f</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID c5b09905-53a1-48cb-898d-70bc9aeab56a</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsListarCliente_Jsp_Client</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::22:18:37</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::22:18:37</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 0ad0a36c-a346-4c98-9b99-170c836cc187</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID 347d4d43-220e-408b-9259-48792502025e</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Aggreg</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IClass type="e">
+			<_id type="a">GUID f88087a0-f129-451c-bfa5-ec293eafc8dd</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">RegistrarCliente_Form</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">HTMLForm</_hname>
+							<_hid type="a">GUID 6a60ba25-1739-4b6c-834b-c4c45faa7d27</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:40:39</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::CLIENTE</_hsubsystem>
+					<_hname type="a">DCD DE CU REGISTRAR CLIENTES</_hname>
+					<_hid type="a">GUID 4ba64ea8-aef0-4c1e-992a-6cb5cd18d994</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:40:39</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:40:39</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:40:39</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 16d4889d-1a31-4366-94ef-8a6d22b6667e</value>
+				<value>GUID 69cde8dc-1d87-4922-acd8-9f862f9fbb11</value>
+				<value>GUID 6ebc2788-cf6e-4e46-83ca-323a278fed17</value>
+				<value>GUID 3528eaa3-d0fd-435c-ba43-80b5d8cc70fd</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 16d4889d-1a31-4366-94ef-8a6d22b6667e</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsListarCliente_Jsp_Client</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::21:45:31</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::21:45:31</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 0ad0a36c-a346-4c98-9b99-170c836cc187</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID 1da0f2fa-d259-43f8-bfca-70b04887c4e9</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Aggreg</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 69cde8dc-1d87-4922-acd8-9f862f9fbb11</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsServlet_Cliente</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::21:49:48</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::21:49:48</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\CC_CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::B_CAPA_CONTROLADORA::CC_CLIENTE</_hsubsystem>
+					<_hname type="a">Servlet_Cliente</_hname>
+					<_hid type="a">GUID 61c49bff-1ad5-42f0-a47a-29444879a1d1</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 6ebc2788-cf6e-4e46-83ca-323a278fed17</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsRegistrarCliente_Jsp_Client</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::21:48:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::21:48:4</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 7f45c82e-c715-4c69-b0ed-6a3fed8b914f</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID 13707a77-6ecd-486f-907f-dd98c658c08d</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Aggreg</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 3528eaa3-d0fd-435c-ba43-80b5d8cc70fd</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">link</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::21:48:48</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::21:48:48</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\CC_CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::B_CAPA_CONTROLADORA::CC_CLIENTE</_hsubsystem>
+					<_hname type="a">Servlet_Cliente</_hname>
+					<_hid type="a">GUID 61c49bff-1ad5-42f0-a47a-29444879a1d1</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IClass type="e">
+			<_id type="a">GUID 0cecd1c2-a8ac-4176-9fe8-573445b13c92</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">VerificarCliente_Form</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">HTMLForm</_hname>
+							<_hid type="a">GUID 6a60ba25-1739-4b6c-834b-c4c45faa7d27</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:40:39</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::CLIENTE</_hsubsystem>
+					<_hname type="a">DCD DE CU VERIFICAR CLIENTE</_hname>
+					<_hid type="a">GUID 231139dc-9950-418b-938c-10123e47317f</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:40:39</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:40:39</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:40:39</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 8bdecd60-149a-4a44-b391-084c24047aa9</value>
+				<value>GUID a81880e2-e0f3-4419-919e-fa88d503c1a2</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 8bdecd60-149a-4a44-b391-084c24047aa9</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">link</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::22:20:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::22:20:27</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\CC_CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::B_CAPA_CONTROLADORA::CC_CLIENTE</_hsubsystem>
+					<_hname type="a">Cliente_Servlet</_hname>
+					<_hid type="a">GUID b498996b-4b95-4b03-b3da-9544e797078f</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID a81880e2-e0f3-4419-919e-fa88d503c1a2</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsVerificarCliente_Jsp_Client</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::22:21:22</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::22:21:22</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 9d6ccb7d-d5a8-4322-bea1-6284f965530d</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID ad9a3e3a-37fc-4baa-84e8-72c1fdd5f8e4</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Aggreg</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IClass type="e">
+			<_id type="a">GUID a59de4a9-264f-4a0b-add9-e013ba0f7680</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ListarCliente_Jsp</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">ServerPage</_hname>
+							<_hid type="a">GUID ecc20ed6-06d5-4707-987f-4036f890fd8c</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:40:39</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::CLIENTE</_hsubsystem>
+					<_hname type="a">DCD DE CU LISTAR CLIENTES</_hname>
+					<_hid type="a">GUID e7721499-0cb9-4f41-a64e-4e4d3bbd0ddb</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:40:39</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:40:39</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:40:39</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 40c7aa01-8fff-4130-a4ad-9d404498be91</value>
+				<value>GUID da47faa1-edb2-42b8-ace0-dc6fdca44751</value>
+				<value>GUID 13cc977e-36b7-4241-9baf-38463d340618</value>
+				<value>GUID d3a0dba2-0ae2-4c5b-9967-ac2374d62c53</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 40c7aa01-8fff-4130-a4ad-9d404498be91</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">build</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::21:18:59</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::21:18:59</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 63f1153e-15ab-4b3a-aea4-050d5fbd58f4</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID da47faa1-edb2-42b8-ace0-dc6fdca44751</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsListarCliente_Jsp_Client</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::21:45:36</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::21:45:36</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 0ad0a36c-a346-4c98-9b99-170c836cc187</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 13cc977e-36b7-4241-9baf-38463d340618</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">buildd</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::21:46:7</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::21:46:7</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 0ad0a36c-a346-4c98-9b99-170c836cc187</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID d3a0dba2-0ae2-4c5b-9967-ac2374d62c53</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">buiild</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::22:17:52</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::22:17:52</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 0ad0a36c-a346-4c98-9b99-170c836cc187</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IClass type="e">
+			<_id type="a">GUID d1e6c7e0-0d79-45aa-88b5-e2f22553daf3</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">VerificarCliente_Jsp</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">ServerPage</_hname>
+							<_hid type="a">GUID ecc20ed6-06d5-4707-987f-4036f890fd8c</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:40:39</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::CLIENTE</_hsubsystem>
+					<_hname type="a">DCD DE CU VERIFICAR CLIENTE</_hname>
+					<_hid type="a">GUID 231139dc-9950-418b-938c-10123e47317f</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:40:39</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:40:39</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:40:39</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID f90710e7-d510-4f63-a3e3-094e00e261de</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID f90710e7-d510-4f63-a3e3-094e00e261de</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">build</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::22:19:53</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::22:19:53</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 9d6ccb7d-d5a8-4322-bea1-6284f965530d</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IClass type="e">
+			<_id type="a">GUID 8a14ecdf-d337-437e-85b5-8c9df9611c71</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">RegistrarCliente_Jsp</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">ServerPage</_hname>
+							<_hid type="a">GUID ecc20ed6-06d5-4707-987f-4036f890fd8c</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:40:39</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\CLIENTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::CLIENTE</_hsubsystem>
+					<_hname type="a">DCD DE CU REGISTRAR CLIENTES</_hname>
+					<_hid type="a">GUID 4ba64ea8-aef0-4c1e-992a-6cb5cd18d994</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:40:39</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:40:39</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:40:39</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 40a7ef43-ef47-479d-9234-8f4d27be9c80</value>
+				<value>GUID c309d9d7-02b5-4c66-a5e5-1a913a9db344</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 40a7ef43-ef47-479d-9234-8f4d27be9c80</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">bulid</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::21:41:39</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::21:41:39</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 0ad0a36c-a346-4c98-9b99-170c836cc187</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID c309d9d7-02b5-4c66-a5e5-1a913a9db344</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">build</_name>
+			<_modifiedTimeWeak type="a">3.1.2021::21:46:58</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.1.2021::21:46:58</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 7f45c82e-c715-4c69-b0ed-6a3fed8b914f</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

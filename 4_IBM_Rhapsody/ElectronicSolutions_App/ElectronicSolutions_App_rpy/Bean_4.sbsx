@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID aab89ca3-a07f-4b6b-bf0b-0796832d0d7d</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Bean</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::1:54:53</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::1:54:53</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:54:53</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:54:8</strongCGTime>
+			<_defaultComposite type="s">GUID db2c84c8-a695-4cac-ba2b-ed8bc033337e</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">12.31.1969::19:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID db2c84c8-a695-4cac-ba2b-ed8bc033337e</value>
+				<value>GUID 4400e798-1fa4-4ba9-b8b3-3bd0c5d19f81</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID db2c84c8-a695-4cac-ba2b-ed8bc033337e</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.31.1969::19:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		<IClass type="e">
+			<_id type="a">GUID 4400e798-1fa4-4ba9-b8b3-3bd0c5d19f81</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Bean_IniciarSesion</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::1:54:53</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\SEGURIDAD.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::SEGURIDAD</_hsubsystem>
+					<_hname type="a">DCD DE CU INICIAR SESION</_hname>
+					<_hid type="a">GUID 36fc95f7-768e-4fff-91dc-7cf36d5d3ba9</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:54:53</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:54:53</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:54:53</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

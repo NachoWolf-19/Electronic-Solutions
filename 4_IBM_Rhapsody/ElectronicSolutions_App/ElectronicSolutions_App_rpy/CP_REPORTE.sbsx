@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID fcf8ed04-2b51-4186-b775-aef6bc6fd226</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">CP_REPORTE</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::1:45:59</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::1:54:47</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:45:59</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:44:27</strongCGTime>
+			<_defaultComposite type="s">GUID ceb052a5-49a8-4b6a-ac27-cc18624a4068</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">12.31.1969::19:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID ceb052a5-49a8-4b6a-ac27-cc18624a4068</value>
+				<value>GUID 99c72956-c004-45fa-afc1-bfcff37530fb</value>
+				<value>GUID b8b5876a-f792-4cc3-a42b-dcdafe9d09a2</value>
+				<value>GUID 5f53a8f1-6db4-4491-ab74-5dd2b8b0c2d5</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID ceb052a5-49a8-4b6a-ac27-cc18624a4068</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.31.1969::19:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		<IClass type="e">
+			<_id type="a">GUID 99c72956-c004-45fa-afc1-bfcff37530fb</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">GenerarReporte_Jsp_Client</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">ClientPage</_hname>
+							<_hid type="a">GUID 7a2582ed-2929-49c6-bc9c-8d4034aeacd0</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:45:59</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\REPORTES.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::REPORTES</_hsubsystem>
+					<_hname type="a">DCD DE CU GENERAR REPORTE</_hname>
+					<_hid type="a">GUID cd9041f7-9dba-41d3-b6e6-fcc944652329</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:45:59</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:45:59</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:45:59</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID a20200a4-77a1-46c3-8a88-e886e508bee1</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID a20200a4-77a1-46c3-8a88-e886e508bee1</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">link</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::1:10:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::1:10:35</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\CC_REPORTE.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::B_CAPA_CONTROLADORA::CC_REPORTE</_hsubsystem>
+					<_hname type="a">Reporte_Servlet</_hname>
+					<_hid type="a">GUID dfb25bca-0c3a-4943-be29-9dd6da3824dc</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IClass type="e">
+			<_id type="a">GUID b8b5876a-f792-4cc3-a42b-dcdafe9d09a2</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">GenerarReporte_Jsp</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">ServerPage</_hname>
+							<_hid type="a">GUID ecc20ed6-06d5-4707-987f-4036f890fd8c</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:45:59</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\REPORTES.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::REPORTES</_hsubsystem>
+					<_hname type="a">DCD DE CU GENERAR REPORTE</_hname>
+					<_hid type="a">GUID cd9041f7-9dba-41d3-b6e6-fcc944652329</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:45:59</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:45:59</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:45:59</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID ebca3ab4-3124-427c-8e24-8ab3145e82c9</value>
+			</AggregatesList>
+		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID ebca3ab4-3124-427c-8e24-8ab3145e82c9</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">build</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::1:45:12</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::1:10:19</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 99c72956-c004-45fa-afc1-bfcff37530fb</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IClass type="e">
+			<_id type="a">GUID 5f53a8f1-6db4-4491-ab74-5dd2b8b0c2d5</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">GenerarReporte_Form</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">HTMLForm</_hname>
+							<_hid type="a">GUID 6a60ba25-1739-4b6c-834b-c4c45faa7d27</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:45:59</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\REPORTES.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::REPORTES</_hsubsystem>
+					<_hname type="a">DCD DE CU GENERAR REPORTE</_hname>
+					<_hid type="a">GUID cd9041f7-9dba-41d3-b6e6-fcc944652329</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:45:59</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:45:59</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:45:59</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

@@ -25,7 +25,7 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">3.1.2021::19:59:47</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">3.1.2021::21:35:49</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -33,15 +33,18 @@
 					<_hid type="a">GUID f15e2bf7-8353-4fd0-83fe-abf2fac96c98</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">3.1.2021::22:18:29</_modifiedTime>
+			<_modifiedTime type="a">3.2.2021::1:54:47</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">3.1.2021::19:59:47</weakCGTime>
+			<weakCGTime type="a">3.1.2021::21:35:49</weakCGTime>
 			<strongCGTime type="a">3.1.2021::19:59:47</strongCGTime>
 			<_defaultComposite type="s">GUID 8eeeb0ec-655f-4f3e-aae6-7732c8e5de13</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">12.31.1969::19:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID af54f741-a85d-4060-bea3-0ea9ebb4055c</value>
+				<value>GUID a3fc9529-e51a-4ef2-aef9-2cef13b64208</value>
+				<value>GUID f1223e71-ab2f-42dc-ba13-72346baa4f3a</value>
+				<value>GUID 07af0eb2-9383-4b0e-97cf-731082db7152</value>
 				<value>GUID 8eeeb0ec-655f-4f3e-aae6-7732c8e5de13</value>
 			</AggregatesList>
 		</ISubsystem>
@@ -157,8 +160,8 @@
 			</_properties>
 			<_name type="a">ARQUITECTURA DE DISE%D1O</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">3.1.2021::20:3:3</_modifiedTime>
-			<_lastModifiedTime type="a">3.1.2021::20:3:3</_lastModifiedTime>
+			<_modifiedTime type="a">3.1.2021::21:35:49</_modifiedTime>
+			<_lastModifiedTime type="a">3.1.2021::21:35:49</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -288,6 +291,7 @@
 				<IHandle type="e">
 					<_hm2Class type="a">ISubsystem</_hm2Class>
 					<_hfilename type="a">.\A_CAPA_PRESENTACION.sbsx</_hfilename>
+					<_hsubsystem type="a">MD</_hsubsystem>
 					<_hname type="a">A_CAPA_PRESENTACION</_hname>
 					<_hid type="a">GUID a3fc9529-e51a-4ef2-aef9-2cef13b64208</_hid>
 				</IHandle>
@@ -340,6 +344,7 @@
 				<IHandle type="e">
 					<_hm2Class type="a">ISubsystem</_hm2Class>
 					<_hfilename type="a">.\B_CAPA_CONTROLADORA.sbsx</_hfilename>
+					<_hsubsystem type="a">MD</_hsubsystem>
 					<_hname type="a">B_CAPA_CONTROLADORA</_hname>
 					<_hid type="a">GUID f1223e71-ab2f-42dc-ba13-72346baa4f3a</_hid>
 				</IHandle>
@@ -392,6 +397,7 @@
 				<IHandle type="e">
 					<_hm2Class type="a">ISubsystem</_hm2Class>
 					<_hfilename type="a">.\C_CAPA_NEGOCIOS.sbsx</_hfilename>
+					<_hsubsystem type="a">MD</_hsubsystem>
 					<_hname type="a">C_CAPA_NEGOCIOS</_hname>
 					<_hid type="a">GUID 07af0eb2-9383-4b0e-97cf-731082db7152</_hid>
 				</IHandle>
@@ -444,7 +450,7 @@
 				<IHandle type="e">
 					<_hm2Class type="a">IDependency</_hm2Class>
 					<_hfilename type="a">.\A_CAPA_PRESENTACION.sbsx</_hfilename>
-					<_hsubsystem type="a">A_CAPA_PRESENTACION</_hsubsystem>
+					<_hsubsystem type="a">MD::A_CAPA_PRESENTACION</_hsubsystem>
 					<_hname type="a">B_CAPA_CONTROLADORA</_hname>
 					<_hid type="a">GUID efc310b5-ec3c-47fc-b2b6-12ac25af264a</_hid>
 				</IHandle>
@@ -505,7 +511,7 @@
 				<IHandle type="e">
 					<_hm2Class type="a">IDependency</_hm2Class>
 					<_hfilename type="a">.\B_CAPA_CONTROLADORA.sbsx</_hfilename>
-					<_hsubsystem type="a">B_CAPA_CONTROLADORA</_hsubsystem>
+					<_hsubsystem type="a">MD::B_CAPA_CONTROLADORA</_hsubsystem>
 					<_hname type="a">C_CAPA_NEGOCIOS</_hname>
 					<_hid type="a">GUID 63bbe012-8895-4351-8ace-c971aa28d663</_hid>
 				</IHandle>
@@ -559,12 +565,24 @@
 			<m_ShowName type="a">0</m_ShowName>
 			<m_ShowStereotype type="a">1</m_ShowStereotype>
 		</CGIInheritance>
+		<ISubsystem type="e">
+			<fileName type="a">A_CAPA_PRESENTACION</fileName>
+			<_id type="a">GUID a3fc9529-e51a-4ef2-aef9-2cef13b64208</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">B_CAPA_CONTROLADORA</fileName>
+			<_id type="a">GUID f1223e71-ab2f-42dc-ba13-72346baa4f3a</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">C_CAPA_NEGOCIOS</fileName>
+			<_id type="a">GUID 07af0eb2-9383-4b0e-97cf-731082db7152</_id>
+		</ISubsystem>
 		<IClass type="e">
 			<_id type="a">GUID 8eeeb0ec-655f-4f3e-aae6-7732c8e5de13</_id>
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.31.1969::19:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">

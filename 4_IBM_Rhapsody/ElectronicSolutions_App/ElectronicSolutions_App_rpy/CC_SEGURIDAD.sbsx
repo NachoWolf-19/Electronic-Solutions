@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>100.840.0</version>
+	<lang>C++</lang>
+	<BuildNo>9841247</BuildNo>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 7afb172e-f859-47e4-9772-076926ce4bbb</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">CC_SEGURIDAD</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::1:53:32</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::1:54:47</_modifiedTime>
+			<weakCGTime type="a">3.2.2021::1:53:32</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:53:20</strongCGTime>
+			<_defaultComposite type="s">GUID 2c2a5865-a0b2-44ed-9cf1-59952441a65b</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">12.31.1969::19:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID 2c2a5865-a0b2-44ed-9cf1-59952441a65b</value>
+				<value>GUID e3214a24-41d3-44ef-ab72-628eacdc21b6</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID 2c2a5865-a0b2-44ed-9cf1-59952441a65b</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.31.1969::19:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		<IClass type="e">
+			<_id type="a">GUID e3214a24-41d3-44ef-ab72-628eacdc21b6</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Login_Servlet</_name>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					<size type="a">1</size>
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hfilename type="a">.\..\..\profiles\DesignProfile\DesignModel.sbsx</_hfilename>
+							<_hsubsystem type="a">DesignModel</_hsubsystem>
+							<_hname type="a">HttpServlet</_hname>
+							<_hid type="a">GUID 3370cd12-7f9f-4b57-bbbe-7f1d438dfefe</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.2.2021::1:53:32</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\SEGURIDAD.sbsx</_hfilename>
+					<_hsubsystem type="a">MA::SEGURIDAD</_hsubsystem>
+					<_hname type="a">DCD DE CU INICIAR SESION</_hname>
+					<_hid type="a">GUID 36fc95f7-768e-4fff-91dc-7cf36d5d3ba9</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">3.2.2021::1:53:32</_modifiedTime>
+			<_lastID type="a">1</_lastID>
+			<weakCGTime type="a">3.2.2021::1:53:32</weakCGTime>
+			<strongCGTime type="a">3.2.2021::1:53:32</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 0deb8027-847e-458a-8622-a7f2301a94d3</value>
+			</AggregatesList>
+		</IClass>
+		<IDependency type="e">
+			<_id type="a">GUID 0deb8027-847e-458a-8622-a7f2301a94d3</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Service_IniciarSesion</_name>
+			<_modifiedTimeWeak type="a">3.2.2021::1:25:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.2.2021::1:25:1</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hfilename type="a">.\Service_4.sbsx</_hfilename>
+					<_hsubsystem type="a">MD::C_CAPA_NEGOCIOS::CN_SEGURIDAD::Service</_hsubsystem>
+					<_hname type="a">Service_IniciarSesion</_hname>
+					<_hid type="a">GUID be4706cd-deb3-4a48-a24e-49273ebe5356</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID e3214a24-41d3-44ef-ab72-628eacdc21b6</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+			<size type="a">0</size>
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+
